@@ -12,10 +12,10 @@ import {
 } from 'lucide-react';
 import { ShaderGradient } from '@/components/ShaderGradient';
 
-// ─── MeetHub Logo (Cyan Gradient) ───────────────────────────────────────────
+// ─── MeetHub Logo (Classic Basic Blue) ───────────────────────────────────────
 const MeetHubLogo = ({ className = 'w-7 h-7' }: { className?: string }) => (
-  <div className={`rounded-xl bg-gradient-to-br from-[#06B6D4] to-[#0891B2] text-[#083344] flex items-center justify-center shadow-lg shadow-cyan-600/30 border border-cyan-400/40 ${className}`}>
-    <Video className="w-3.5 h-3.5 text-[#083344]" />
+  <div className={`rounded-xl bg-[#2563EB] text-white flex items-center justify-center border border-[#1D4ED8] ${className}`}>
+    <Video className="w-3.5 h-3.5 text-white" />
   </div>
 );
 
@@ -428,33 +428,33 @@ export default function MeetHubPage() {
           
           {/* Logo */}
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#06B6D4] to-[#0891B2] text-[#083344] flex items-center justify-center font-extrabold shadow-md shadow-cyan-600/30 border border-cyan-400/40">
-              <Video className="w-4 h-4 text-[#083344]" />
+            <div className="w-8 h-8 rounded-xl bg-[#2563EB] text-white flex items-center justify-center font-bold border border-[#1D4ED8]">
+              <Video className="w-4 h-4 text-white" />
             </div>
             <span className="font-extrabold text-xl tracking-tight text-[#060D17] font-display">MeetHub</span>
           </div>
 
           {/* Nav links */}
           <nav className="hidden lg:flex items-center gap-7 text-xs sm:text-sm font-bold text-[#1E293B]">
-            <a href="#pipeline" className="hover:text-[#0891B2] transition-colors">Pipeline</a>
-            <a href="#features" className="hover:text-[#0891B2] transition-colors">Capabilities</a>
-            <a href="#integrations" className="hover:text-[#0891B2] transition-colors">Integrations</a>
-            <a href="#workflow" className="hover:text-[#0891B2] transition-colors">Workflow</a>
-            <a href="#faq" className="hover:text-[#0891B2] transition-colors">FAQ</a>
+            <a href="#pipeline" className="hover:text-[#2563EB] transition-colors">Pipeline</a>
+            <a href="#features" className="hover:text-[#2563EB] transition-colors">Capabilities</a>
+            <a href="#integrations" className="hover:text-[#2563EB] transition-colors">Integrations</a>
+            <a href="#workflow" className="hover:text-[#2563EB] transition-colors">Workflow</a>
+            <a href="#faq" className="hover:text-[#2563EB] transition-colors">FAQ</a>
           </nav>
 
           {/* Action buttons */}
           <div className="flex items-center gap-2.5">
             <button
               onClick={handleDownloadPDF}
-              className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 btn-secondary-blue text-xs shadow-2xs font-extrabold"
+              className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 btn-secondary-blue text-xs font-bold"
             >
               <FileText className="w-3.5 h-3.5 text-current" />
               <span>Export PDF</span>
             </button>
             <button
               onClick={() => setShowDemoModal(true)}
-              className="btn-blue inline-flex items-center gap-1.5 px-4 py-2 text-xs sm:text-sm shadow-md font-extrabold"
+              className="btn-blue inline-flex items-center gap-1.5 px-4 py-2 text-xs sm:text-sm font-bold"
             >
               <span>Book Walkthrough</span>
               <ArrowRight className="w-3.5 h-3.5 text-current" />
@@ -482,7 +482,7 @@ export default function MeetHubPage() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black font-display tracking-tight text-[#060D17] leading-[1.06]">
-                Turn meeting conversations into <span className="text-[#0891B2]">Linear tickets</span>
+                Turn meeting conversations into <span className="text-[#2563EB]">Linear tickets</span>
               </h1>
 
               <p className="text-base sm:text-lg lg:text-xl text-[#1E293B] font-medium max-w-xl leading-relaxed">
@@ -492,14 +492,14 @@ export default function MeetHubPage() {
               <div className="flex flex-wrap items-center justify-start gap-3 pt-2">
                 <a
                   href="#pipeline"
-                  className="btn-blue px-7 py-3.5 font-extrabold text-sm sm:text-base transition-all flex items-center gap-2 group shadow-lg"
+                  className="btn-blue px-7 py-3.5 font-bold text-sm sm:text-base transition-all flex items-center gap-2 group"
                 >
                   <span>Try Live Demo</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform text-current" />
                 </a>
                 <button
                   onClick={() => setShowDemoModal(true)}
-                  className="btn-secondary-blue px-6 py-3.5 text-sm sm:text-base font-extrabold flex items-center gap-2 shadow-xs"
+                  className="btn-secondary-blue px-6 py-3.5 text-sm sm:text-base font-bold flex items-center gap-2"
                 >
                   <Play className="w-3.5 h-3.5 text-current fill-current" />
                   <span>Book Walkthrough</span>
@@ -509,15 +509,15 @@ export default function MeetHubPage() {
               {/* Trust Indicators */}
               <div className="pt-3 flex flex-wrap items-center gap-5 text-xs text-[#334155] font-bold">
                 <div className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#0891B2]" />
+                  <CheckCircle2 className="w-4 h-4 text-[#2563EB]" />
                   <span>Zero Data Retention</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#0891B2]" />
+                  <CheckCircle2 className="w-4 h-4 text-[#2563EB]" />
                   <span>Linear API Ready</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#0891B2]" />
+                  <CheckCircle2 className="w-4 h-4 text-[#2563EB]" />
                   <span>100% Free Demo</span>
                 </div>
               </div>
@@ -525,15 +525,12 @@ export default function MeetHubPage() {
 
             {/* Right Column: Blended Editorial Illustration (lg:col-span-5) */}
             <div className="lg:col-span-5 relative flex items-center justify-center lg:justify-end">
-              {/* Atmospheric Glow behind Illustration */}
-              <div className="absolute -inset-6 bg-gradient-to-tr from-[#06B6D4]/30 via-[#34D399]/20 to-transparent blur-3xl rounded-full pointer-events-none -z-10" />
-
-              {/* Blended Frame with Soft Paper Vignette */}
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#8DB8A2]/80 bg-[#EAF4EE] backdrop-blur-xs max-w-sm sm:max-w-md w-full group">
+              {/* Blended Frame with Soft Paper Vignette (No Glowing Aura) */}
+              <div className="relative rounded-3xl overflow-hidden shadow-xl border border-[#8DB8A2]/80 bg-[#EAF4EE] backdrop-blur-xs max-w-sm sm:max-w-md w-full group">
                 
                 {/* Floating Top Pill Badge */}
-                <div className="absolute top-3.5 left-3.5 z-20 px-3 py-1 rounded-full bg-[#060D17]/85 backdrop-blur-md text-white border border-white/15 text-[11px] font-extrabold flex items-center gap-2 shadow-md">
-                  <span className="w-2 h-2 rounded-full bg-[#06B6D4] animate-pulse" />
+                <div className="absolute top-3.5 left-3.5 z-20 px-3 py-1 rounded-full bg-[#060D17]/85 backdrop-blur-md text-white border border-white/15 text-[11px] font-bold flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-[#2563EB] animate-pulse" />
                   <span>Live Meeting • Transcribing</span>
                 </div>
 
@@ -576,13 +573,13 @@ export default function MeetHubPage() {
               {/* Authentic SaaS Application Header Toolbar with Rich Sage-Paper Tone */}
               <div className="bg-[#D2E6DC] px-6 py-3.5 flex items-center justify-between flex-wrap gap-4 text-[#060D17] border-b border-[#8DB8A2]">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#06B6D4] to-[#0891B2] text-[#083344] flex items-center justify-center font-extrabold text-xs shadow-sm border border-cyan-400/40">
-                    <Sliders className="w-4 h-4 text-[#083344]" />
+                  <div className="w-8 h-8 rounded-xl bg-[#2563EB] text-white flex items-center justify-center font-bold text-xs border border-[#1D4ED8]">
+                    <Sliders className="w-4 h-4 text-white" />
                   </div>
                   <div>
                     <div className="flex items-center gap-2">
                       <span className="font-extrabold text-sm text-[#060D17] tracking-tight font-display">MeetHub Live Intelligence Engine</span>
-                      <span className="px-2.5 py-0.5 rounded-full bg-[#ECFEFF] text-[#0E7490] text-[10px] font-extrabold border border-[#67E8F9] shadow-2xs">● Operational</span>
+                      <span className="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-bold border border-emerald-300">● Operational</span>
                     </div>
                   </div>
                 </div>
@@ -590,14 +587,14 @@ export default function MeetHubPage() {
                 <div className="flex items-center gap-2.5 text-xs">
                   <button
                     onClick={handleDownloadPDF}
-                    className="btn-secondary-blue px-3.5 py-1.5 text-xs font-extrabold flex items-center gap-1.5 shadow-2xs"
+                    className="btn-secondary-blue px-3.5 py-1.5 text-xs font-bold flex items-center gap-1.5"
                   >
                     <FileText className="w-3.5 h-3.5 text-current" />
                     <span>Export PDF</span>
                   </button>
                   <button
                     onClick={handleReset}
-                    className="btn-secondary-blue px-3 py-1.5 text-xs font-extrabold flex items-center gap-1.5 shadow-2xs"
+                    className="btn-secondary-blue px-3 py-1.5 text-xs font-bold flex items-center gap-1.5"
                   >
                     <RefreshCw className="w-3.5 h-3.5 text-current" />
                     <span>Reset</span>
@@ -608,13 +605,13 @@ export default function MeetHubPage() {
               {/* Scenario Switcher Toolbar in Crisp Sage-Paper Tone */}
               <div className="bg-[#DBEBE2] border-b border-[#8DB8A2] px-6 py-2.5 flex items-center justify-between flex-wrap gap-3 text-xs">
                 <div className="flex items-center gap-2">
-                  <span className="font-extrabold text-[#1E293B] text-xs">Scenario:</span>
+                  <span className="font-bold text-[#1E293B] text-xs">Scenario:</span>
                   <div className="flex items-center gap-1.5">
                     {PRESETS.map(p => (
                       <button
                         key={p.id}
                         onClick={() => handleSelectPreset(p)}
-                        className={`px-3 py-1.5 rounded-lg transition-all text-xs font-extrabold ${activePreset.id === p.id ? 'bg-gradient-to-r from-[#22D3EE] to-[#06B6D4] text-[#083344] border border-[#0891B2] shadow-sm' : 'btn-secondary-blue'}`}
+                        className={`px-3 py-1.5 rounded-lg transition-all text-xs font-bold ${activePreset.id === p.id ? 'bg-[#2563EB] text-white border border-[#1D4ED8]' : 'btn-secondary-blue'}`}
                       >
                         {p.tag}
                       </button>
@@ -622,13 +619,13 @@ export default function MeetHubPage() {
                   </div>
                 </div>
 
-                {/* Step indicator with Cyan Accents */}
+                {/* Step indicator with Basic Clean Accents */}
                 <div className="flex items-center gap-2 text-xs">
-                  <span className={`px-2.5 py-1 rounded-md transition-colors ${step === 1 ? 'bg-gradient-to-r from-[#22D3EE] to-[#06B6D4] text-[#083344] font-extrabold border border-[#0891B2] shadow-xs' : 'bg-[#ECFEFF] text-[#0E7490] border border-[#A5F3FC] font-bold'}`}>1. Ingest Transcript</span>
-                  <span className="text-[#0891B2] font-extrabold">→</span>
-                  <span className={`px-2.5 py-1 rounded-md transition-colors ${step === 2 ? 'bg-gradient-to-r from-[#22D3EE] to-[#06B6D4] text-[#083344] font-extrabold border border-[#0891B2] shadow-xs' : 'bg-[#ECFEFF] text-[#0E7490] border border-[#A5F3FC] font-bold'}`}>2. Review Deliverables</span>
-                  <span className="text-[#0891B2] font-extrabold">→</span>
-                  <span className={`px-2.5 py-1 rounded-md transition-colors ${step === 3 ? 'bg-gradient-to-r from-[#22D3EE] to-[#06B6D4] text-[#083344] font-extrabold border border-[#0891B2] shadow-xs' : 'bg-[#ECFEFF] text-[#0E7490] border border-[#A5F3FC] font-bold'}`}>3. Push to Linear</span>
+                  <span className={`px-2.5 py-1 rounded-md transition-colors ${step === 1 ? 'bg-[#2563EB] text-white font-bold border border-[#1D4ED8]' : 'bg-white/80 text-[#475569] border border-[#CBD5E1] font-medium'}`}>1. Ingest Transcript</span>
+                  <span className="text-[#64748B] font-bold">→</span>
+                  <span className={`px-2.5 py-1 rounded-md transition-colors ${step === 2 ? 'bg-[#2563EB] text-white font-bold border border-[#1D4ED8]' : 'bg-white/80 text-[#475569] border border-[#CBD5E1] font-medium'}`}>2. Review Deliverables</span>
+                  <span className="text-[#64748B] font-bold">→</span>
+                  <span className={`px-2.5 py-1 rounded-md transition-colors ${step === 3 ? 'bg-[#2563EB] text-white font-bold border border-[#1D4ED8]' : 'bg-white/80 text-[#475569] border border-[#CBD5E1] font-medium'}`}>3. Push to Linear</span>
                 </div>
               </div>
 
@@ -710,11 +707,11 @@ export default function MeetHubPage() {
                   <button
                     onClick={handleExtractTasks}
                     disabled={loading || !transcript.trim()}
-                    className="btn-blue w-full py-3.5 text-sm sm:text-base font-extrabold shadow-md flex items-center justify-center gap-2"
+                    className="btn-blue w-full py-3.5 text-sm sm:text-base font-bold flex items-center justify-center gap-2"
                   >
                     {loading ? (
                       <>
-                        <span className="w-4 h-4 border-2 border-[#083344]/40 border-t-[#083344] rounded-full animate-spin" />
+                        <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
                         <span>Extracting Action Items…</span>
                       </>
                     ) : (
@@ -731,9 +728,9 @@ export default function MeetHubPage() {
                   <div className="flex items-center justify-between pb-2 border-b border-[#8DB8A2]">
                     <div>
                       <h3 className="font-extrabold text-base text-[#060D17] flex items-center gap-2 font-display">
-                        <CheckSquare className="w-4 h-4 text-[#0891B2]" />
+                        <CheckSquare className="w-4 h-4 text-[#2563EB]" />
                         Detected Action Items
-                        <span className="text-xs font-extrabold px-2 py-0.5 rounded-full bg-[#ECFEFF] text-[#0E7490] border border-[#67E8F9] shadow-2xs">
+                        <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-white text-[#1E293B] border border-[#CBD5E1]">
                           {tasks.length}
                         </span>
                       </h3>
@@ -743,7 +740,7 @@ export default function MeetHubPage() {
                     {pendingCount > 0 && (
                       <button
                         onClick={handleBulkSync}
-                        className="btn-blue px-3.5 py-1.5 text-xs font-extrabold flex items-center gap-1.5 shadow-sm"
+                        className="btn-blue px-3.5 py-1.5 text-xs font-bold flex items-center gap-1.5"
                       >
                         <Zap className="w-3.5 h-3.5 text-current" />
                         <span>Push All to Linear ({pendingCount})</span>
@@ -757,11 +754,11 @@ export default function MeetHubPage() {
                       const isCreated = task.status === 'created';
                       const isRejected = task.status === 'rejected';
 
-                      let badgeClass = 'bg-[#0891B2] text-white border border-[#0e7490] font-extrabold shadow-2xs';
+                      let badgeClass = 'bg-[#2563EB] text-white border border-[#1D4ED8] font-bold';
                       if (task.priority === 'Urgent') {
-                        badgeClass = 'bg-red-600 text-white font-extrabold border border-red-700 shadow-2xs';
+                        badgeClass = 'bg-red-600 text-white font-bold border border-red-700';
                       } else if (task.priority === 'High') {
-                        badgeClass = 'bg-amber-600 text-white font-extrabold border border-amber-700 shadow-2xs';
+                        badgeClass = 'bg-amber-600 text-white font-bold border border-amber-700';
                       }
 
                       return (
@@ -777,25 +774,25 @@ export default function MeetHubPage() {
                             <span className={`text-[11px] px-2 py-0.5 rounded-md border ${badgeClass}`}>
                               {task.priority}
                             </span>
-                            <span className="text-[11px] font-extrabold text-[#0E7490] bg-[#ECFEFF] px-2 py-0.5 rounded-md border border-[#67E8F9] shadow-2xs">
+                            <span className="text-[11px] font-bold text-[#334155] bg-white px-2 py-0.5 rounded-md border border-[#CBD5E1]">
                               {task.category}
                             </span>
                           </div>
 
                           {/* Layer 4: Clean Content Body with Sage-Paper Background */}
                           <div className="p-3.5 bg-[#EAF4EE] space-y-2">
-                            <p className="text-xs font-extrabold text-[#060D17] leading-snug">
+                            <p className="text-xs font-bold text-[#060D17] leading-snug">
                               {task.task}
                             </p>
 
                             <div className="flex items-center justify-between pt-1 text-xs text-[#1E293B]">
                               <div className="flex items-center gap-3">
-                                <span className="flex items-center gap-1 font-extrabold text-[#060D17]">
-                                  <User className="w-3.5 h-3.5 text-[#0891B2]" />
+                                <span className="flex items-center gap-1 font-bold text-[#060D17]">
+                                  <User className="w-3.5 h-3.5 text-[#2563EB]" />
                                   {task.owner}
                                 </span>
-                                <span className="flex items-center gap-1 font-bold text-[#334155]">
-                                  <Calendar className="w-3 h-3 text-[#0891B2]" />
+                                <span className="flex items-center gap-1 font-medium text-[#334155]">
+                                  <Calendar className="w-3 h-3 text-[#2563EB]" />
                                   {task.dueDate}
                                 </span>
                               </div>
@@ -804,7 +801,7 @@ export default function MeetHubPage() {
                               {task.status === 'pending' && (
                                 <button
                                   onClick={() => handleCreateTicket(task.id, task.owner, task.dueDate)}
-                                  className="btn-blue px-3 py-1 text-xs font-extrabold flex items-center gap-1 shadow-sm"
+                                  className="btn-blue px-3 py-1 text-xs font-bold flex items-center gap-1"
                                 >
                                   <Send className="w-3 h-3 text-current" />
                                   <span>Sync</span>
@@ -1125,14 +1122,14 @@ export default function MeetHubPage() {
             <div className="flex flex-wrap items-center justify-center gap-3 pt-3">
               <button
                 onClick={() => setShowDemoModal(true)}
-                className="btn-blue px-8 py-4 rounded-xl font-extrabold text-sm sm:text-base shadow-lg transition-all flex items-center gap-2"
+                className="btn-blue px-8 py-4 rounded-xl font-bold text-sm sm:text-base transition-all flex items-center gap-2"
               >
                 <span>Schedule Live Walkthrough</span>
                 <ArrowRight className="w-4 h-4 text-current" />
               </button>
               <button
                 onClick={handleReset}
-                className="btn-secondary-blue px-6 py-4 rounded-xl font-extrabold text-sm sm:text-base transition-all shadow-xs"
+                className="btn-secondary-blue px-6 py-4 rounded-xl font-bold text-sm sm:text-base transition-all"
               >
                 <span>Reset Live Demo</span>
               </button>
@@ -1254,13 +1251,13 @@ export default function MeetHubPage() {
                   <button
                     type="button"
                     onClick={() => setShowDemoModal(false)}
-                    className="btn-secondary-blue px-4 py-2.5 rounded-xl text-xs font-extrabold"
+                    className="btn-secondary-blue px-4 py-2.5 rounded-xl text-xs font-bold"
                   >
                     Cancel
                   </button>
                   <button
                     type="submit"
-                    className="btn-blue px-6 py-2.5 rounded-xl text-xs font-extrabold shadow-md"
+                    className="btn-blue px-6 py-2.5 rounded-xl text-xs font-bold"
                   >
                     Confirm Walkthrough Booking
                   </button>
@@ -1277,7 +1274,7 @@ export default function MeetHubPage() {
                 </p>
                 <button
                   onClick={() => { setShowDemoModal(false); setDemoConfirmed(false); }}
-                  className="btn-blue px-6 py-2.5 rounded-xl text-xs font-extrabold shadow-md"
+                  className="btn-blue px-6 py-2.5 rounded-xl text-xs font-bold"
                 >
                   Return to Dashboard
                 </button>
