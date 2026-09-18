@@ -469,39 +469,99 @@ export default function MeetHubPage() {
       <div className="relative pt-12 sm:pt-20 pb-16 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-10 relative z-10">
           
-          {/* Left-Aligned Clean Hero Content */}
-          <div className="text-left max-w-4xl space-y-5 relative">
-            <div className="absolute -inset-x-12 -inset-y-8 -z-10 bg-gradient-to-b from-[#DFECE6]/90 via-[#D3E5DC]/80 to-transparent blur-3xl rounded-full pointer-events-none" />
+          {/* 2-Column Hero Grid: Left Content + Right Blended Illustration */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative">
             
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#ECFEFF] border border-[#67E8F9] text-xs font-extrabold text-[#0E7490] shadow-2xs backdrop-blur-md">
-              <span className="w-2 h-2 rounded-full bg-[#06B6D4] animate-pulse" />
-              <span>Meeting Intelligence for Linear</span>
+            {/* Left Column: Hero Content & CTAs (lg:col-span-7) */}
+            <div className="lg:col-span-7 text-left space-y-5 relative z-10">
+              <div className="absolute -inset-x-12 -inset-y-8 -z-10 bg-gradient-to-b from-[#DFECE6]/90 via-[#D3E5DC]/80 to-transparent blur-3xl rounded-full pointer-events-none" />
+              
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#ECFEFF] border border-[#67E8F9] text-xs font-extrabold text-[#0E7490] shadow-2xs backdrop-blur-md">
+                <span className="w-2 h-2 rounded-full bg-[#06B6D4] animate-pulse" />
+                <span>Meeting Intelligence for Linear</span>
+              </div>
+
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black font-display tracking-tight text-[#060D17] leading-[1.06]">
+                Turn meeting conversations into <span className="text-[#0891B2]">Linear tickets</span>
+              </h1>
+
+              <p className="text-base sm:text-lg lg:text-xl text-[#1E293B] font-medium max-w-xl leading-relaxed">
+                Extract action items, assign owners with due dates, and push issues directly to Linear from your meeting notes.
+              </p>
+
+              <div className="flex flex-wrap items-center justify-start gap-3 pt-2">
+                <a
+                  href="#pipeline"
+                  className="btn-blue px-7 py-3.5 font-extrabold text-sm sm:text-base transition-all flex items-center gap-2 group shadow-lg"
+                >
+                  <span>Try Live Demo</span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform text-current" />
+                </a>
+                <button
+                  onClick={() => setShowDemoModal(true)}
+                  className="btn-secondary-blue px-6 py-3.5 text-sm sm:text-base font-extrabold flex items-center gap-2 shadow-xs"
+                >
+                  <Play className="w-3.5 h-3.5 text-current fill-current" />
+                  <span>Book Walkthrough</span>
+                </button>
+              </div>
+
+              {/* Trust Indicators */}
+              <div className="pt-3 flex flex-wrap items-center gap-5 text-xs text-[#334155] font-bold">
+                <div className="flex items-center gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-[#0891B2]" />
+                  <span>Zero Data Retention</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-[#0891B2]" />
+                  <span>Linear API Ready</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-[#0891B2]" />
+                  <span>100% Free Demo</span>
+                </div>
+              </div>
             </div>
 
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black font-display tracking-tight text-[#060D17] leading-[1.08]">
-              Turn meeting conversations into <span className="text-[#0891B2]">Linear tickets</span>
-            </h1>
+            {/* Right Column: Blended Editorial Illustration (lg:col-span-5) */}
+            <div className="lg:col-span-5 relative flex items-center justify-center lg:justify-end">
+              {/* Atmospheric Glow behind Illustration */}
+              <div className="absolute -inset-6 bg-gradient-to-tr from-[#06B6D4]/30 via-[#34D399]/20 to-transparent blur-3xl rounded-full pointer-events-none -z-10" />
 
-            <p className="text-base sm:text-xl text-[#1E293B] font-medium max-w-2xl leading-relaxed">
-              Extract action items, assign owners with due dates, and push issues directly to Linear from your meeting notes.
-            </p>
+              {/* Blended Frame with Soft Paper Vignette */}
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#8DB8A2]/80 bg-[#EAF4EE] backdrop-blur-xs max-w-sm sm:max-w-md w-full group">
+                
+                {/* Floating Top Pill Badge */}
+                <div className="absolute top-3.5 left-3.5 z-20 px-3 py-1 rounded-full bg-[#060D17]/85 backdrop-blur-md text-white border border-white/15 text-[11px] font-extrabold flex items-center gap-2 shadow-md">
+                  <span className="w-2 h-2 rounded-full bg-[#06B6D4] animate-pulse" />
+                  <span>Live Meeting • Transcribing</span>
+                </div>
 
-            <div className="flex flex-wrap items-center justify-start gap-3 pt-2">
-              <a
-                href="#pipeline"
-                className="btn-blue px-7 py-3.5 font-extrabold text-sm sm:text-base transition-all flex items-center gap-2 group shadow-lg"
-              >
-                <span>Try Live Demo</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform text-current" />
-              </a>
-              <button
-                onClick={() => setShowDemoModal(true)}
-                className="btn-secondary-blue px-6 py-3.5 text-sm sm:text-base font-extrabold flex items-center gap-2 shadow-xs"
-              >
-                <Play className="w-3.5 h-3.5 text-current fill-current" />
-                <span>Book Walkthrough</span>
-              </button>
+                {/* Floating Linear Sync Status Card */}
+                <div className="absolute bottom-3.5 right-3.5 z-20 p-2.5 rounded-2xl bg-[#DFECE6]/95 backdrop-blur-md border border-[#8DB8A2] shadow-xl flex items-center gap-2.5 max-w-[220px]">
+                  <div className="w-7 h-7 rounded-xl bg-gradient-to-br from-[#06B6D4] to-[#0891B2] text-[#083344] flex items-center justify-center font-black text-xs shrink-0 shadow-xs">
+                    ✓
+                  </div>
+                  <div className="text-[11px] leading-tight">
+                    <div className="font-extrabold text-[#060D17]">3 Tickets Extracted</div>
+                    <div className="text-[#0E7490] font-bold">Synced to Linear board</div>
+                  </div>
+                </div>
+
+                {/* The Illustration without white margin borders */}
+                <div className="relative overflow-hidden">
+                  <img
+                    src="/images/meeting-illustration.jpg"
+                    alt="Team meeting video conference with instant task extraction"
+                    className="w-full h-auto object-cover contrast-[1.02] brightness-[1.01] transform transition-transform duration-500 group-hover:scale-[1.02]"
+                  />
+                  {/* Subtle Vignette & Gradient Blend onto Sage Canvas */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#D2E6DC]/30 via-transparent to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 ring-1 ring-inset ring-[#8DB8A2]/50 pointer-events-none" />
+                </div>
+              </div>
             </div>
+
           </div>
 
 
