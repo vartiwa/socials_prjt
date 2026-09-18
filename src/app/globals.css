@@ -386,28 +386,28 @@
   background-size: 28px 28px;
 }
 
-/* MeetHub Primary Rich Light-Bluish Action Button (.btn-blue, alias .btn-lime) */
+/* MeetHub Primary Radiant Cyan Action Button (.btn-blue, alias .btn-lime) */
 .btn-blue,
 .btn-lime {
-  background: linear-gradient(180deg, #BAE6FD 0%, #38BDF8 100%) !important;
-  color: #032039 !important;
+  background: linear-gradient(180deg, #67E8F9 0%, #06B6D4 100%) !important;
+  color: #083344 !important;
   font-weight: 800 !important;
   border-radius: 9999px;
-  border: 1.5px solid #0284C7 !important;
+  border: 1.5px solid #0891B2 !important;
   box-shadow: 
-    0 4px 18px -2px rgba(14, 165, 233, 0.45),
+    0 4px 18px -2px rgba(6, 182, 212, 0.45),
     0 2px 4px rgba(15, 23, 42, 0.08),
     inset 0 1px 0 rgba(255, 255, 255, 0.95);
   transition: all 0.22s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .btn-blue:hover,
 .btn-lime:hover {
-  background: linear-gradient(180deg, #E0F2FE 0%, #7DD3FC 100%) !important;
-  border-color: #0369A1 !important;
-  color: #02182B !important;
+  background: linear-gradient(180deg, #A5F3FC 0%, #22D3EE 100%) !important;
+  border-color: #0E7490 !important;
+  color: #042638 !important;
   transform: translateY(-2px);
   box-shadow: 
-    0 8px 26px -2px rgba(14, 165, 233, 0.6), 
+    0 8px 26px -2px rgba(6, 182, 212, 0.6), 
     inset 0 1px 0 #FFFFFF;
 }
 .btn-blue:active,
@@ -425,28 +425,28 @@
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paperNoise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paperNoise)'/%3E%3C/svg%3E");
 }
 
-/* MeetHub Secondary Action Button (.btn-secondary-blue) with Crisp Frosted Sky-Ice Tone */
+/* MeetHub Secondary Action Button (.btn-secondary-blue) with Frosted Cyan Tone */
 .btn-secondary-blue,
 .btn-secondary-arsak {
-  background: linear-gradient(180deg, #F0F9FF 0%, #E0F2FE 100%) !important;
-  color: #0369A1 !important;
+  background: linear-gradient(180deg, #ECFEFF 0%, #CFFAFE 100%) !important;
+  color: #0E7490 !important;
   font-weight: 750 !important;
   border-radius: 9999px;
-  border: 1.5px solid #7DD3FC !important;
+  border: 1.5px solid #67E8F9 !important;
   box-shadow: 
-    0 2px 8px rgba(14, 165, 233, 0.12),
-    0 4px 12px -2px rgba(14, 165, 233, 0.14),
+    0 2px 8px rgba(6, 182, 212, 0.12),
+    0 4px 12px -2px rgba(6, 182, 212, 0.14),
     inset 0 1px 0 rgba(255, 255, 255, 0.95);
   transition: all 0.22s ease;
 }
 .btn-secondary-blue:hover,
 .btn-secondary-arsak:hover {
-  background: linear-gradient(180deg, #E0F2FE 0%, #BAE6FD 100%) !important;
-  border-color: #38BDF8 !important;
-  color: #0284C7 !important;
+  background: linear-gradient(180deg, #CFFAFE 0%, #A5F3FC 100%) !important;
+  border-color: #22D3EE !important;
+  color: #0891B2 !important;
   transform: translateY(-1px);
   box-shadow: 
-    0 6px 18px -2px rgba(56, 189, 248, 0.28),
+    0 6px 18px -2px rgba(6, 182, 212, 0.28),
     inset 0 1px 0 #FFFFFF;
 }
 .btn-secondary-blue:active,
