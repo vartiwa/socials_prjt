@@ -385,27 +385,28 @@
   background-size: 28px 28px;
 }
 
-/* MeetHub Primary Deep Cobalt / Royal Azure Button (.btn-blue, alias .btn-lime) */
+/* MeetHub Primary Light Bluish Action Button (.btn-blue, alias .btn-lime) */
 .btn-blue,
 .btn-lime {
-  background: linear-gradient(180deg, #2563EB 0%, #1D4ED8 100%) !important;
-  color: #FFFFFF !important;
-  font-weight: 700;
+  background: linear-gradient(180deg, #BAE6FD 0%, #7DD3FC 100%) !important;
+  color: #042642 !important;
+  font-weight: 750;
   border-radius: 9999px;
-  border: 1.5px solid #60A5FA;
+  border: 1.5px solid #38BDF8 !important;
   box-shadow: 
-    0 4px 14px -2px rgba(29, 78, 216, 0.45),
-    0 2px 4px rgba(15, 23, 42, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    0 4px 16px -2px rgba(56, 189, 248, 0.42),
+    0 2px 4px rgba(15, 23, 42, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
   transition: all 0.22s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .btn-blue:hover,
 .btn-lime:hover {
-  background: linear-gradient(180deg, #3B82F6 0%, #2563EB 100%) !important;
-  border-color: #93C5FD;
+  background: linear-gradient(180deg, #CEEBFE 0%, #90D3FC 100%) !important;
+  border-color: #0284C7 !important;
+  color: #021D34 !important;
   transform: translateY(-2px);
   box-shadow: 
-    0 10px 24px -4px rgba(29, 78, 216, 0.6), 
+    0 8px 24px -2px rgba(56, 189, 248, 0.58), 
     inset 0 1px 0 #FFFFFF;
 }
 .btn-blue:active,
@@ -423,28 +424,28 @@
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paperNoise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paperNoise)'/%3E%3C/svg%3E");
 }
 
-/* MeetHub Secondary Action Button (.btn-secondary-blue) with Crisp Bluish Tint */
+/* MeetHub Secondary Action Button (.btn-secondary-blue) with Soft Frosted Ice-Blue Tone */
 .btn-secondary-blue,
 .btn-secondary-arsak {
-  background: linear-gradient(180deg, #EDF4FD 0%, #DFEBF9 100%) !important;
-  color: #1E40AF !important;
+  background: linear-gradient(180deg, #F0F7FF 0%, #DCECFD 100%) !important;
+  color: #0A3F6B !important;
   font-weight: 700;
   border-radius: 9999px;
-  border: 1.5px solid #99BEEC !important;
+  border: 1.5px solid #A4D3FA !important;
   box-shadow: 
-    0 2px 6px rgba(30, 64, 175, 0.08),
-    0 6px 16px -3px rgba(30, 64, 175, 0.12),
+    0 2px 6px rgba(14, 116, 144, 0.08),
+    0 4px 12px -2px rgba(14, 116, 144, 0.10),
     inset 0 1px 0 rgba(255, 255, 255, 0.95);
   transition: all 0.22s ease;
 }
 .btn-secondary-blue:hover,
 .btn-secondary-arsak:hover {
-  background: linear-gradient(180deg, #E2EFFE 0%, #D4E6FA 100%) !important;
-  border-color: #3B82F6 !important;
-  color: #1D4ED8 !important;
+  background: linear-gradient(180deg, #E2F1FE 0%, #CBE5FC 100%) !important;
+  border-color: #38BDF8 !important;
+  color: #0369A1 !important;
   transform: translateY(-1px);
   box-shadow: 
-    0 6px 20px -2px rgba(37, 99, 235, 0.25),
+    0 6px 18px -2px rgba(56, 189, 248, 0.28),
     inset 0 1px 0 #FFFFFF;
 }
 .btn-secondary-blue:active,

@@ -449,7 +449,7 @@ export default function MeetHubPage() {
               onClick={handleDownloadPDF}
               className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 btn-secondary-blue text-xs shadow-2xs font-semibold"
             >
-              <FileText className="w-3.5 h-3.5 text-[#1D4ED8]" />
+              <FileText className="w-3.5 h-3.5 text-current" />
               <span>Export PDF</span>
             </button>
             <button
@@ -457,7 +457,7 @@ export default function MeetHubPage() {
               className="btn-blue inline-flex items-center gap-1.5 px-4 py-2 text-xs sm:text-sm shadow-md"
             >
               <span>Book Walkthrough</span>
-              <ArrowRight className="w-3.5 h-3.5 text-white" />
+              <ArrowRight className="w-3.5 h-3.5 text-current" />
             </button>
           </div>
 
@@ -495,13 +495,13 @@ export default function MeetHubPage() {
                 className="btn-blue px-7 py-3.5 font-bold text-sm transition-all flex items-center gap-2 group shadow-lg"
               >
                 <span>Launch Interactive Demo</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform text-white" />
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform text-current" />
               </a>
               <button
                 onClick={() => setShowDemoModal(true)}
                 className="btn-secondary-blue px-6 py-3.5 text-sm font-semibold flex items-center gap-2 shadow-xs"
               >
-                <Play className="w-3.5 h-3.5 text-[#1D4ED8] fill-[#1D4ED8]" />
+                <Play className="w-3.5 h-3.5 text-current fill-current" />
                 <span>Schedule 15-Min Walkthrough</span>
               </button>
             </div>
@@ -535,14 +535,14 @@ export default function MeetHubPage() {
                     onClick={handleDownloadPDF}
                     className="btn-secondary-blue px-3.5 py-1.5 text-xs font-semibold flex items-center gap-1.5 shadow-2xs"
                   >
-                    <FileText className="w-3.5 h-3.5 text-[#1D4ED8]" />
+                    <FileText className="w-3.5 h-3.5 text-current" />
                     <span>Export PDF</span>
                   </button>
                   <button
                     onClick={handleReset}
                     className="btn-secondary-blue px-3 py-1.5 text-xs font-semibold flex items-center gap-1.5 shadow-2xs"
                   >
-                    <RefreshCw className="w-3.5 h-3.5 text-[#1D4ED8]" />
+                    <RefreshCw className="w-3.5 h-3.5 text-current" />
                     <span>Reset</span>
                   </button>
                 </div>
@@ -557,7 +557,7 @@ export default function MeetHubPage() {
                       <button
                         key={p.id}
                         onClick={() => handleSelectPreset(p)}
-                        className={`px-3 py-1.5 rounded-lg transition-all text-xs font-semibold ${activePreset.id === p.id ? 'bg-[#1E3A8A] text-white shadow-sm font-bold' : 'btn-secondary-blue'}`}
+                        className={`px-3 py-1.5 rounded-lg transition-all text-xs font-semibold ${activePreset.id === p.id ? 'bg-[#7DD3FC] text-[#042642] border border-[#38BDF8] shadow-sm font-bold' : 'btn-secondary-blue'}`}
                       >
                         {p.tag}
                       </button>
@@ -567,11 +567,11 @@ export default function MeetHubPage() {
 
                 {/* Step indicator with Bluish Accents */}
                 <div className="flex items-center gap-2 text-xs">
-                  <span className={`px-2.5 py-1 rounded-md transition-colors ${step === 1 ? 'bg-[#2563EB] text-white font-bold shadow-xs' : 'bg-[#EDF4FD] text-[#1E40AF] border border-[#99BEEC]'}`}>1. Ingest Transcript</span>
-                  <span className="text-[#2563EB] font-bold">→</span>
-                  <span className={`px-2.5 py-1 rounded-md transition-colors ${step === 2 ? 'bg-[#2563EB] text-white font-bold shadow-xs' : 'bg-[#EDF4FD] text-[#1E40AF] border border-[#99BEEC]'}`}>2. Review Deliverables</span>
-                  <span className="text-[#2563EB] font-bold">→</span>
-                  <span className={`px-2.5 py-1 rounded-md transition-colors ${step === 3 ? 'bg-[#2563EB] text-white font-bold shadow-xs' : 'bg-[#EDF4FD] text-[#1E40AF] border border-[#99BEEC]'}`}>3. Push to Linear</span>
+                  <span className={`px-2.5 py-1 rounded-md transition-colors ${step === 1 ? 'bg-[#7DD3FC] text-[#042642] font-bold border border-[#38BDF8] shadow-xs' : 'bg-[#F0F7FF] text-[#0A3F6B] border border-[#A4D3FA]'}`}>1. Ingest Transcript</span>
+                  <span className="text-[#0284C7] font-bold">→</span>
+                  <span className={`px-2.5 py-1 rounded-md transition-colors ${step === 2 ? 'bg-[#7DD3FC] text-[#042642] font-bold border border-[#38BDF8] shadow-xs' : 'bg-[#F0F7FF] text-[#0A3F6B] border border-[#A4D3FA]'}`}>2. Review Deliverables</span>
+                  <span className="text-[#0284C7] font-bold">→</span>
+                  <span className={`px-2.5 py-1 rounded-md transition-colors ${step === 3 ? 'bg-[#7DD3FC] text-[#042642] font-bold border border-[#38BDF8] shadow-xs' : 'bg-[#F0F7FF] text-[#0A3F6B] border border-[#A4D3FA]'}`}>3. Push to Linear</span>
                 </div>
               </div>
 
@@ -592,7 +592,7 @@ export default function MeetHubPage() {
                     </div>
 
                     <label className="cursor-pointer px-3.5 py-1.5 btn-secondary-blue text-xs font-semibold flex items-center gap-1.5 shadow-2xs shrink-0">
-                      <UploadCloud className="w-3.5 h-3.5 text-[#1D4ED8]" />
+                      <UploadCloud className="w-3.5 h-3.5 text-current" />
                       <span>{uploading ? 'Parsing…' : 'Upload File'}</span>
                       <input
                         type="file"
@@ -649,7 +649,7 @@ export default function MeetHubPage() {
                     </div>
                   )}
 
-                  {/* Primary Extract Button with Royal Azure (.btn-blue) */}
+                  {/* Primary Extract Button with Light Bluish Tone (.btn-blue) */}
                   <button
                     onClick={handleExtractTasks}
                     disabled={loading || !transcript.trim()}
@@ -657,12 +657,12 @@ export default function MeetHubPage() {
                   >
                     {loading ? (
                       <>
-                        <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
+                        <span className="w-4 h-4 border-2 border-[#042642]/40 border-t-[#042642] rounded-full animate-spin" />
                         <span>Extracting Action Items…</span>
                       </>
                     ) : (
                       <>
-                        <Brain className="w-4 h-4 text-white" />
+                        <Brain className="w-4 h-4 text-current" />
                         <span>Extract Action Items →</span>
                       </>
                     )}
@@ -688,7 +688,7 @@ export default function MeetHubPage() {
                         onClick={handleBulkSync}
                         className="btn-blue px-3 py-1.5 text-xs font-bold flex items-center gap-1 shadow-sm"
                       >
-                        <Zap className="w-3 h-3 text-white" />
+                        <Zap className="w-3 h-3 text-current" />
                         <span>Push All to Linear ({pendingCount})</span>
                       </button>
                     )}
@@ -749,7 +749,7 @@ export default function MeetHubPage() {
                                   onClick={() => handleCreateTicket(task.id, task.owner, task.dueDate)}
                                   className="btn-blue px-2.5 py-1 text-xs font-bold flex items-center gap-1 shadow-sm"
                                 >
-                                  <Send className="w-3 h-3 text-white" />
+                                  <Send className="w-3 h-3 text-current" />
                                   <span>Sync</span>
                                 </button>
                               )}
@@ -1035,7 +1035,7 @@ export default function MeetHubPage() {
                   className={`w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-[#07150E] transition-colors ${isOpen ? 'bg-[#D3E5DC]' : 'bg-[#EAF4EE]'}`}
                 >
                   <span className="font-display">{item.q}</span>
-                  <span className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 text-xs font-bold transition-transform ${isOpen ? 'btn-blue shadow-xs' : 'bg-[#EDF4FD] text-[#1D4ED8] border border-[#99BEEC]'}`}>
+                  <span className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 text-xs font-bold transition-transform ${isOpen ? 'btn-blue shadow-xs' : 'bg-[#F0F7FF] text-[#0A3F6B] border border-[#A4D3FA]'}`}>
                     {isOpen ? '−' : '+'}
                   </span>
                 </button>
@@ -1071,7 +1071,7 @@ export default function MeetHubPage() {
                 className="btn-blue px-8 py-3.5 rounded-xl font-bold text-sm sm:text-base shadow-lg transition-all flex items-center gap-2"
               >
                 <span>Schedule a 15-Min Walkthrough</span>
-                <ArrowRight className="w-4 h-4 text-white" />
+                <ArrowRight className="w-4 h-4 text-current" />
               </button>
               <button
                 onClick={handleReset}
