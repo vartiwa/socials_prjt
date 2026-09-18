@@ -77,120 +77,120 @@ const PRESETS = [
   }
 ];
 
-// ─── Features (Clean Product Capabilities) ─────────────────────────────────
+// ─── Features (High-Velocity Product Capabilities) ─────────────────────────
 const FEATURES = [
   {
     icon: Brain,
-    title: 'Automatic Commitment Detection',
+    title: 'Verbal Commitment Detection',
     tag: 'NLP Engine',
-    desc: 'Identifies verbal commitments during calls, attributes accountable owners, and sets realistic due dates without manual note-taking.',
+    desc: 'Listens to raw dialogue, isolates promises, attributes accountable owners, and schedules realistic due dates automatically.',
     badge: 'NLP Diarization',
     capability: 'Speaker & Intent Attribution',
-    iconBg: 'bg-blue-50 text-[#1D4ED8] border border-blue-100',
-    badgeBg: 'bg-blue-50 text-[#1D4ED8] border border-blue-200',
+    iconBg: 'bg-[#E0F2FE] text-[#0284C7] border border-[#BAE6FD]',
+    badgeBg: 'bg-[#E0F2FE] text-[#0369A1] border border-[#7DD3FC]',
   },
   {
     icon: Send,
-    title: 'Direct Linear Backlog Sync',
+    title: '1-Click Linear Backlog Sync',
     tag: 'Issue Tracker',
-    desc: 'Dispatches verified tasks straight to your Linear team backlog with cycles, priority labels, and assignees configured.',
+    desc: 'Dispatches structured issues straight to your engineering board with team cycles, priority labels, and assignees configured.',
     badge: 'Linear GraphQL',
-    capability: '1-Click Issue Dispatch',
-    iconBg: 'bg-blue-50 text-[#1D4ED8] border border-blue-100',
-    badgeBg: 'bg-blue-50 text-[#1D4ED8] border border-blue-200',
+    capability: 'Instant Ticket Creation',
+    iconBg: 'bg-[#E0F2FE] text-[#0284C7] border border-[#BAE6FD]',
+    badgeBg: 'bg-[#E0F2FE] text-[#0369A1] border border-[#7DD3FC]',
   },
   {
     icon: FileText,
-    title: 'Structured Executive Briefs',
+    title: 'Executive Architecture Briefs',
     tag: 'Documentation',
-    desc: 'Generates structured meeting briefs containing attendee rosters, architectural decisions, and synced ticket references.',
+    desc: 'Generates structured executive summaries featuring attendee rosters, technical decisions, and linked Linear ticket references.',
     badge: 'Instant Export',
-    capability: 'Executive PDF Audit',
-    iconBg: 'bg-blue-50 text-[#1D4ED8] border border-blue-100',
-    badgeBg: 'bg-blue-50 text-[#1D4ED8] border border-blue-200',
+    capability: 'Audit-Ready PDF Briefs',
+    iconBg: 'bg-[#E0F2FE] text-[#0284C7] border border-[#BAE6FD]',
+    badgeBg: 'bg-[#E0F2FE] text-[#0369A1] border border-[#7DD3FC]',
   },
   {
     icon: UploadCloud,
-    title: 'Universal Media Ingestion',
+    title: 'Universal Multi-Format Ingest',
     tag: 'File Parser',
-    desc: 'Upload audio recordings, video call exports, markdown notes, or plain-text transcripts. Ingest and extract deliverables in one flow.',
-    badge: 'Universal Ingest',
-    capability: 'Audio, Video & Document',
-    iconBg: 'bg-blue-50 text-[#1D4ED8] border border-blue-100',
-    badgeBg: 'bg-blue-50 text-[#1D4ED8] border border-blue-200',
+    desc: 'Upload MP4/MOV call recordings, MP3 audio, Markdown notes, CSVs, or raw transcripts. Extracts tasks across all sources.',
+    badge: 'Multi-Format Ingest',
+    capability: 'Audio, Video & Documents',
+    iconBg: 'bg-[#E0F2FE] text-[#0284C7] border border-[#BAE6FD]',
+    badgeBg: 'bg-[#E0F2FE] text-[#0369A1] border border-[#7DD3FC]',
   }
 ];
 
 // ─── Integrations ─────────────────────────────────────────────────────────
 const INTEGRATIONS = [
-  { name: 'Linear', category: 'Project Tracker', desc: 'Auto-syncs action items with cycle assignment and priority mapping.' },
-  { name: 'Slack', category: 'Team Chat', desc: 'Dispatches real-time meeting digests and ticket updates to project channels.' },
-  { name: 'Notion', category: 'Knowledge Base', desc: 'Archives meeting briefs and action logs into your team documentation wiki.' },
-  { name: 'GitHub', category: 'Code & PRs', desc: 'Connects code pull requests and issues directly to discussed deliverables.' },
-  { name: 'Google Meet', category: 'Video Calls', desc: 'Captures discussion transcripts directly from browser audio streams.' },
-  { name: 'Zoom', category: 'Conferencing', desc: 'Parses meeting recordings and generates instant follow-up tasks.' },
+  { name: 'Linear', category: 'Issue Tracker', desc: 'Creates tracked backlog tickets with automatic cycle assignment, priority tags, and owner attribution.' },
+  { name: 'Slack', category: 'Team Messaging', desc: 'Broadcasts instant meeting executive digests and synced ticket links directly to dedicated project channels.' },
+  { name: 'Notion', category: 'Knowledge Base', desc: 'Syncs structured meeting decisions, attendance rosters, and action plans directly to team documentation wikis.' },
+  { name: 'GitHub', category: 'Pull Requests & Issues', desc: 'Links code pull requests and engineering deliverables directly to spoken meeting agreements.' },
+  { name: 'Google Meet', category: 'Video Conferencing', desc: 'Ingests call transcripts in real-time straight from browser audio feeds and Google Workspace.' },
+  { name: 'Zoom', category: 'Recorded Meetings', desc: 'Parses cloud recordings, separates speaker turns, and extracts follow-up deliverables instantly.' },
 ];
 
 // ─── Authentic Workflow Comparison (No Fake Stats) ─────────────────────────
 const WORKFLOW_BEFORE = [
   {
-    title: 'Untracked Verbal Commitments',
-    desc: 'Agreements made verbally during calls are easily forgotten when team members return to their day-to-day work.',
+    title: 'Forgotten Verbal Commitments',
+    desc: 'Promises made casually in meetings evaporate the moment the call ends. Crucial deliverables get lost in private notes.',
   },
   {
-    title: 'Manual Post-Meeting Note Taking',
-    desc: 'Engineers and team leads spend 30+ minutes after every call typing summaries and copying tasks into trackers.',
+    title: '45+ Minutes of Manual Note-Taking',
+    desc: 'Engineers and team leads waste hours every sprint deciphering scratch pads and manually keying tickets into trackers.',
   },
   {
-    title: 'Lost Context and Missed Deadlines',
-    desc: 'Tasks created days later often lack original discussion nuance, acceptance criteria, or realistic due dates.',
+    title: 'Lost Context & Vague Ownership',
+    desc: 'Tickets logged days later lack technical nuance, acceptance criteria, and exact timeline accountability.',
   },
   {
-    title: 'Siloed Records Across Chats',
-    desc: 'Important architecture decisions stay trapped in video recordings or private threads instead of the team backlog.',
+    title: 'Trapped in Recordings & Threads',
+    desc: 'Architecture decisions stay buried inside 60-minute video files or fragmented Slack threads nobody re-watches.',
   },
 ];
 
 const WORKFLOW_AFTER = [
   {
-    title: 'Automatic Commitment Detection',
-    desc: 'Speech is processed to identify explicit commitments, attributing assignees and due dates on the spot.',
+    title: 'Zero-Friction Intent Detection',
+    desc: 'NLP engine identifies commitments in real time, locking in the responsible owner and agreed timeline on the spot.',
   },
   {
-    title: 'Zero Post-Meeting Admin Burden',
-    desc: 'Review detected action items during or immediately following the call, with 1-click push to issue trackers.',
+    title: 'Zero Post-Meeting Administrative Debt',
+    desc: 'Deliverables are reviewed during or immediately following the call, with instant one-click issue creation.',
   },
   {
-    title: 'Instant Linear Backlog Sync',
-    desc: 'Tickets appear immediately in Linear with team labels, priority levels, and owners already assigned.',
+    title: 'Direct Linear Backlog Synchronization',
+    desc: 'Backlog tickets are generated with team labels, priority flags, and assignees ready for sprint planning.',
   },
   {
-    title: 'Permanent Documented Audit Trail',
-    desc: 'Generate clean PDF executive briefs containing attendee rosters, decisions, and linked Linear ticket IDs.',
+    title: 'Documented Executive Audit Trail',
+    desc: 'Download clean PDF architecture briefs with complete attendee rosters, agreed milestones, and verified ticket IDs.',
   },
 ];
 
 // ─── FAQ ──────────────────────────────────────────────────────────────────────
 const FAQ_LIST = [
   {
-    q: 'How does the AI task extraction work?',
-    a: 'Paste or upload your meeting transcript. The built-in extraction engine processes the conversation using Gemini NLP heuristics, identifies explicit action commitments, attributes owners, and assigns due dates in seconds.'
+    q: 'How does MeetHub extract action items from meeting speech?',
+    a: 'Simply paste notes or upload meeting audio/transcripts. The built-in intelligence engine analyzes the dialogue, identifies clear verbal commitments, attributes responsible owners, and assigns realistic due dates in seconds.'
   },
   {
-    q: 'What is the unified single-deployment architecture?',
-    a: 'Both the frontend MeetHub SaaS dashboard and backend processing endpoints run inside one unified Next.js project. You can deploy it to Vercel in 60 seconds with zero extra servers or microservices to maintain.'
-  },
-  {
-    q: 'How do tasks sync with Linear?',
-    a: 'Clicking "Sync" formats the task with title, assignee, and priority, communicates directly with Linear, and creates a verified ticket (e.g. LIN-4821) with a direct link to your team board.'
+    q: 'How does the Linear synchronization work?',
+    a: 'Clicking "Sync" formats the deliverable, communicates directly with Linear\'s GraphQL API, and creates a verified ticket (e.g. LIN-4821) linked straight to your engineering backlog.'
   },
   {
     q: 'What file formats can I upload for transcription?',
-    a: 'You can upload PDF summaries, TXT meeting notes, Markdown files, CSV logs, or recorded audio/video files (MP4, WEBM, MOV, M4V). The parser extracts clean dialogue automatically.'
+    a: 'MeetHub natively parses audio and video files (MP4, WEBM, MOV, MP3), PDF briefs, plain text transcripts, Markdown notes, and CSV logs with zero extra setup.'
   },
   {
-    q: 'Is my meeting data private and secure?',
-    a: 'Yes. MeetHub operates with a stateless architecture. Transcripts are ingested, processed in-memory during the request, and immediately discarded. No customer meeting transcripts are stored permanently.'
+    q: 'Is my company\'s meeting data private and secure?',
+    a: 'Absolutely. MeetHub operates on a stateless in-memory architecture. Dialogue and transcripts are processed in-memory during extraction and never saved to persistent storage.'
+  },
+  {
+    q: 'What makes the single-deployment Next.js architecture better?',
+    a: 'Both the responsive SaaS dashboard and backend extraction endpoints run inside a single, unified codebase. You can deploy to Vercel in 60 seconds with zero microservice maintenance.'
   }
 ];
 
@@ -428,33 +428,33 @@ export default function MeetHubPage() {
           
           {/* Logo */}
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#2563EB] to-[#0284C7] text-white flex items-center justify-center font-bold shadow-md shadow-blue-600/30 border border-blue-400/40">
+            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#0284C7] to-[#2563EB] text-white flex items-center justify-center font-extrabold shadow-md shadow-sky-600/30 border border-sky-400/40">
               <Video className="w-4 h-4 text-white" />
             </div>
-            <span className="font-bold text-lg tracking-tight text-[#07150E] font-display">MeetHub</span>
+            <span className="font-extrabold text-xl tracking-tight text-[#060D17] font-display">MeetHub</span>
           </div>
 
           {/* Nav links */}
-          <nav className="hidden lg:flex items-center gap-7 text-xs sm:text-sm font-semibold text-[#1A3828]">
-            <a href="#pipeline" className="hover:text-[#1D4ED8] transition-colors">Pipeline</a>
-            <a href="#features" className="hover:text-[#1D4ED8] transition-colors">Capabilities</a>
-            <a href="#integrations" className="hover:text-[#1D4ED8] transition-colors">Integrations</a>
-            <a href="#workflow" className="hover:text-[#1D4ED8] transition-colors">Workflow</a>
-            <a href="#faq" className="hover:text-[#1D4ED8] transition-colors">FAQ</a>
+          <nav className="hidden lg:flex items-center gap-7 text-xs sm:text-sm font-bold text-[#1E293B]">
+            <a href="#pipeline" className="hover:text-[#0284C7] transition-colors">Pipeline</a>
+            <a href="#features" className="hover:text-[#0284C7] transition-colors">Capabilities</a>
+            <a href="#integrations" className="hover:text-[#0284C7] transition-colors">Integrations</a>
+            <a href="#workflow" className="hover:text-[#0284C7] transition-colors">Workflow</a>
+            <a href="#faq" className="hover:text-[#0284C7] transition-colors">FAQ</a>
           </nav>
 
           {/* Action buttons */}
           <div className="flex items-center gap-2.5">
             <button
               onClick={handleDownloadPDF}
-              className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 btn-secondary-blue text-xs shadow-2xs font-semibold"
+              className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 btn-secondary-blue text-xs shadow-2xs font-extrabold"
             >
               <FileText className="w-3.5 h-3.5 text-current" />
               <span>Export PDF</span>
             </button>
             <button
               onClick={() => setShowDemoModal(true)}
-              className="btn-blue inline-flex items-center gap-1.5 px-4 py-2 text-xs sm:text-sm shadow-md"
+              className="btn-blue inline-flex items-center gap-1.5 px-4 py-2 text-xs sm:text-sm shadow-md font-extrabold"
             >
               <span>Book Walkthrough</span>
               <ArrowRight className="w-3.5 h-3.5 text-current" />
@@ -472,37 +472,37 @@ export default function MeetHubPage() {
           {/* Hero Header Copy with Deep Contrast against Mint/Cyan Mesh */}
           <div className="text-center max-w-3xl mx-auto space-y-4 relative">
             <div className="absolute -inset-x-12 -inset-y-8 -z-10 bg-gradient-to-b from-[#DFECE6]/90 via-[#D3E5DC]/80 to-transparent blur-3xl rounded-full pointer-events-none" />
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DFECE6] border border-[#8DB8A2] text-xs font-bold text-[#07150E] shadow-2xs backdrop-blur-md">
-              <span className="w-2 h-2 rounded-full bg-[#1D4ED8] animate-pulse" />
-              <span>High-Velocity Meeting Intelligence • Linear Sync</span>
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#E0F2FE] border border-[#7DD3FC] text-xs font-extrabold text-[#0369A1] shadow-2xs backdrop-blur-md">
+              <span className="w-2 h-2 rounded-full bg-[#0284C7] animate-pulse" />
+              <span>⚡ AI Meeting Intelligence • Instant Linear Dispatch</span>
             </div>
 
-            <h1 className="text-4xl sm:text-6xl font-bold font-display tracking-tight text-[#07150E] leading-[1.12]">
-              Turn meeting conversations into <br />
-              <span className="relative inline-block text-[#1D4ED8]">
-                actionable Linear tickets
-                <span className="absolute -bottom-1 left-0 w-full h-[3px] bg-[#1D4ED8] rounded-full" />
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-display tracking-tight text-[#060D17] leading-[1.08]">
+              Never lose a meeting decision again. <br />
+              <span className="relative inline-block mt-1.5 bg-gradient-to-r from-[#0284C7] via-[#2563EB] to-[#1D4ED8] bg-clip-text text-transparent font-black">
+                Turn speech into Linear tickets
+                <span className="absolute -bottom-1 left-0 w-full h-[3.5px] bg-gradient-to-r from-[#0284C7] to-[#2563EB] rounded-full" />
               </span>
             </h1>
 
-            <p className="text-base sm:text-lg text-[#1A3828] font-normal max-w-xl mx-auto leading-relaxed">
-              Detect verbal commitments, assign responsible owners, and push verified issues straight to your engineering backlog in seconds.
+            <p className="text-base sm:text-lg text-[#1E293B] font-medium max-w-2xl mx-auto leading-relaxed">
+              MeetHub automatically detects action items, attributes accountable owners, sets realistic deadlines, and pushes verified issues straight into your backlog before the call even ends.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
               <a
                 href="#pipeline"
-                className="btn-blue px-7 py-3.5 font-bold text-sm transition-all flex items-center gap-2 group shadow-lg"
+                className="btn-blue px-7 py-3.5 font-extrabold text-sm sm:text-base transition-all flex items-center gap-2 group shadow-lg"
               >
-                <span>Launch Interactive Demo</span>
+                <span>Test Live Sandbox</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform text-current" />
               </a>
               <button
                 onClick={() => setShowDemoModal(true)}
-                className="btn-secondary-blue px-6 py-3.5 text-sm font-semibold flex items-center gap-2 shadow-xs"
+                className="btn-secondary-blue px-6 py-3.5 text-sm sm:text-base font-extrabold flex items-center gap-2 shadow-xs"
               >
                 <Play className="w-3.5 h-3.5 text-current fill-current" />
-                <span>Schedule 15-Min Walkthrough</span>
+                <span>Book Architecture Walkthrough</span>
               </button>
             </div>
           </div>
@@ -517,15 +517,15 @@ export default function MeetHubPage() {
               <div className="arsak-shelf" />
               
               {/* Authentic SaaS Application Header Toolbar with Rich Sage-Paper Tone */}
-              <div className="bg-[#D2E6DC] px-6 py-3.5 flex items-center justify-between flex-wrap gap-4 text-[#07150E] border-b border-[#8DB8A2]">
+              <div className="bg-[#D2E6DC] px-6 py-3.5 flex items-center justify-between flex-wrap gap-4 text-[#060D17] border-b border-[#8DB8A2]">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-xl bg-[#1E3A8A] text-white flex items-center justify-center font-bold text-xs shadow-sm border border-blue-400/30">
-                    <Sliders className="w-4 h-4 text-blue-200" />
+                  <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#0284C7] to-[#2563EB] text-white flex items-center justify-center font-extrabold text-xs shadow-sm border border-sky-400/40">
+                    <Sliders className="w-4 h-4 text-white" />
                   </div>
                   <div>
                     <div className="flex items-center gap-2">
-                      <span className="font-bold text-sm text-[#07150E] tracking-tight font-display">MeetHub Live Pipeline</span>
-                      <span className="px-2 py-0.5 rounded-full bg-[#EDF4FD] text-[#1D4ED8] text-[10px] font-bold border border-[#99BEEC] shadow-2xs">Active</span>
+                      <span className="font-extrabold text-sm text-[#060D17] tracking-tight font-display">MeetHub Live Intelligence Engine</span>
+                      <span className="px-2.5 py-0.5 rounded-full bg-[#E0F2FE] text-[#0369A1] text-[10px] font-extrabold border border-[#7DD3FC] shadow-2xs">● Operational</span>
                     </div>
                   </div>
                 </div>
@@ -533,14 +533,14 @@ export default function MeetHubPage() {
                 <div className="flex items-center gap-2.5 text-xs">
                   <button
                     onClick={handleDownloadPDF}
-                    className="btn-secondary-blue px-3.5 py-1.5 text-xs font-semibold flex items-center gap-1.5 shadow-2xs"
+                    className="btn-secondary-blue px-3.5 py-1.5 text-xs font-extrabold flex items-center gap-1.5 shadow-2xs"
                   >
                     <FileText className="w-3.5 h-3.5 text-current" />
                     <span>Export PDF</span>
                   </button>
                   <button
                     onClick={handleReset}
-                    className="btn-secondary-blue px-3 py-1.5 text-xs font-semibold flex items-center gap-1.5 shadow-2xs"
+                    className="btn-secondary-blue px-3 py-1.5 text-xs font-extrabold flex items-center gap-1.5 shadow-2xs"
                   >
                     <RefreshCw className="w-3.5 h-3.5 text-current" />
                     <span>Reset</span>
@@ -551,13 +551,13 @@ export default function MeetHubPage() {
               {/* Scenario Switcher Toolbar in Crisp Sage-Paper Tone */}
               <div className="bg-[#DBEBE2] border-b border-[#8DB8A2] px-6 py-2.5 flex items-center justify-between flex-wrap gap-3 text-xs">
                 <div className="flex items-center gap-2">
-                  <span className="font-bold text-[#1A3828] text-xs">Scenario:</span>
+                  <span className="font-extrabold text-[#1E293B] text-xs">Scenario:</span>
                   <div className="flex items-center gap-1.5">
                     {PRESETS.map(p => (
                       <button
                         key={p.id}
                         onClick={() => handleSelectPreset(p)}
-                        className={`px-3 py-1.5 rounded-lg transition-all text-xs font-semibold ${activePreset.id === p.id ? 'bg-[#7DD3FC] text-[#042642] border border-[#38BDF8] shadow-sm font-bold' : 'btn-secondary-blue'}`}
+                        className={`px-3 py-1.5 rounded-lg transition-all text-xs font-extrabold ${activePreset.id === p.id ? 'bg-gradient-to-r from-[#38BDF8] to-[#0284C7] text-white border border-[#0284C7] shadow-sm' : 'btn-secondary-blue'}`}
                       >
                         {p.tag}
                       </button>
@@ -565,13 +565,13 @@ export default function MeetHubPage() {
                   </div>
                 </div>
 
-                {/* Step indicator with Bluish Accents */}
+                {/* Step indicator with Vibrant Bluish Accents */}
                 <div className="flex items-center gap-2 text-xs">
-                  <span className={`px-2.5 py-1 rounded-md transition-colors ${step === 1 ? 'bg-[#7DD3FC] text-[#042642] font-bold border border-[#38BDF8] shadow-xs' : 'bg-[#F0F7FF] text-[#0A3F6B] border border-[#A4D3FA]'}`}>1. Ingest Transcript</span>
-                  <span className="text-[#0284C7] font-bold">→</span>
-                  <span className={`px-2.5 py-1 rounded-md transition-colors ${step === 2 ? 'bg-[#7DD3FC] text-[#042642] font-bold border border-[#38BDF8] shadow-xs' : 'bg-[#F0F7FF] text-[#0A3F6B] border border-[#A4D3FA]'}`}>2. Review Deliverables</span>
-                  <span className="text-[#0284C7] font-bold">→</span>
-                  <span className={`px-2.5 py-1 rounded-md transition-colors ${step === 3 ? 'bg-[#7DD3FC] text-[#042642] font-bold border border-[#38BDF8] shadow-xs' : 'bg-[#F0F7FF] text-[#0A3F6B] border border-[#A4D3FA]'}`}>3. Push to Linear</span>
+                  <span className={`px-2.5 py-1 rounded-md transition-colors ${step === 1 ? 'bg-gradient-to-r from-[#38BDF8] to-[#0284C7] text-white font-extrabold border border-[#0284C7] shadow-xs' : 'bg-[#F0F9FF] text-[#0369A1] border border-[#BAE6FD] font-bold'}`}>1. Ingest Transcript</span>
+                  <span className="text-[#0284C7] font-extrabold">→</span>
+                  <span className={`px-2.5 py-1 rounded-md transition-colors ${step === 2 ? 'bg-gradient-to-r from-[#38BDF8] to-[#0284C7] text-white font-extrabold border border-[#0284C7] shadow-xs' : 'bg-[#F0F9FF] text-[#0369A1] border border-[#BAE6FD] font-bold'}`}>2. Review Deliverables</span>
+                  <span className="text-[#0284C7] font-extrabold">→</span>
+                  <span className={`px-2.5 py-1 rounded-md transition-colors ${step === 3 ? 'bg-gradient-to-r from-[#38BDF8] to-[#0284C7] text-white font-extrabold border border-[#0284C7] shadow-xs' : 'bg-[#F0F9FF] text-[#0369A1] border border-[#BAE6FD] font-bold'}`}>3. Push to Linear</span>
                 </div>
               </div>
 
@@ -582,16 +582,16 @@ export default function MeetHubPage() {
                 <div className="lg:col-span-7 p-6 sm:p-7 space-y-4 bg-[#E5F1EB]">
                   <div className="flex items-center justify-between gap-4">
                     <div>
-                      <h3 className="font-bold text-base text-[#07150E] flex items-center gap-2 font-display">
-                        <Mic className="w-4 h-4 text-[#1D4ED8]" />
+                      <h3 className="font-extrabold text-base text-[#060D17] flex items-center gap-2 font-display">
+                        <Mic className="w-4 h-4 text-[#0284C7]" />
                         Meeting Dialogue &amp; Notes
                       </h3>
-                      <p className="text-xs text-[#1A3828]">
+                      <p className="text-xs text-[#1E293B] font-medium">
                         Review spoken dialogue, paste meeting minutes, or upload audio files.
                       </p>
                     </div>
 
-                    <label className="cursor-pointer px-3.5 py-1.5 btn-secondary-blue text-xs font-semibold flex items-center gap-1.5 shadow-2xs shrink-0">
+                    <label className="cursor-pointer px-3.5 py-1.5 btn-secondary-blue text-xs font-extrabold flex items-center gap-1.5 shadow-2xs shrink-0">
                       <UploadCloud className="w-3.5 h-3.5 text-current" />
                       <span>{uploading ? 'Parsing…' : 'Upload File'}</span>
                       <input
@@ -607,12 +607,12 @@ export default function MeetHubPage() {
                   {/* Clean Session & Audio Player Card with Rich Sage-Paper Tone */}
                   <div className="arsak-card rounded-xl p-3.5 bg-[#E2EFE8] border border-[#8DB8A2] flex items-center justify-between gap-4">
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-lg bg-[#EDF4FD] border border-[#99BEEC] text-[#1D4ED8] flex items-center justify-center font-bold text-xs shadow-2xs">
+                      <div className="w-8 h-8 rounded-lg bg-[#E0F2FE] border border-[#7DD3FC] text-[#0284C7] flex items-center justify-center font-extrabold text-xs shadow-2xs">
                         <Play className="w-3.5 h-3.5 fill-current ml-0.5" />
                       </div>
                       <div>
-                        <div className="text-xs font-bold text-[#07150E] font-display">{activePreset.title}</div>
-                        <div className="text-[11px] text-[#1A3828] flex items-center gap-2 mt-0.5 font-medium">
+                        <div className="text-xs font-extrabold text-[#060D17] font-display">{activePreset.title}</div>
+                        <div className="text-[11px] text-[#334155] flex items-center gap-2 mt-0.5 font-bold">
                           <span>{activePreset.time}</span>
                           <span>•</span>
                           <span>{activePreset.participants.join(', ')}</span>
@@ -624,7 +624,7 @@ export default function MeetHubPage() {
                       {[35, 70, 45, 85, 30, 95, 55, 75, 90, 45, 65, 92, 35, 80, 60, 88].map((h, i) => (
                         <div
                           key={i}
-                          className="flex-1 bg-[#2563EB] rounded-full"
+                          className="flex-1 bg-[#0284C7] rounded-full"
                           style={{ height: `${h}%` }}
                         />
                       ))}
@@ -632,38 +632,38 @@ export default function MeetHubPage() {
                   </div>
 
                   {/* Clean Transcript Editor with Sage Paper Tint */}
-                  <div className="relative rounded-xl bg-[#EAF4EE] p-4 border border-[#8DB8A2] focus-within:border-[#2563EB] focus-within:ring-2 focus-within:ring-blue-200 transition-all shadow-xs">
+                  <div className="relative rounded-xl bg-[#EAF4EE] p-4 border border-[#8DB8A2] focus-within:border-[#0284C7] focus-within:ring-2 focus-within:ring-sky-200 transition-all shadow-xs">
                     <textarea
                       value={transcript}
                       onChange={e => setTranscript(e.target.value)}
                       rows={7}
-                      className="w-full bg-transparent text-sm text-[#07150E] font-medium leading-relaxed focus:outline-none resize-none placeholder-[#426654]"
+                      className="w-full bg-transparent text-sm text-[#060D17] font-semibold leading-relaxed focus:outline-none resize-none placeholder-[#64748B]"
                       placeholder="Paste meeting dialogue, discussion notes, or upload a transcript file..."
                     />
                   </div>
 
                   {uploadMsg && (
-                    <div className={`p-3 rounded-xl text-xs font-medium flex items-center gap-2 border ${uploadMsg.ok ? 'bg-emerald-100 text-emerald-900 border-emerald-400' : 'bg-rose-100 text-rose-900 border-rose-400'}`}>
+                    <div className={`p-3 rounded-xl text-xs font-bold flex items-center gap-2 border ${uploadMsg.ok ? 'bg-emerald-100 text-emerald-900 border-emerald-400' : 'bg-rose-100 text-rose-900 border-rose-400'}`}>
                       {uploadMsg.ok ? <CheckCircle2 className="w-4 h-4 shrink-0 text-emerald-700" /> : <X className="w-4 h-4 shrink-0 text-rose-700" />}
                       <span>{uploadMsg.text}</span>
                     </div>
                   )}
 
-                  {/* Primary Extract Button with Light Bluish Tone (.btn-blue) */}
+                  {/* Primary Extract Button with Rich Light-Bluish Tone (.btn-blue) */}
                   <button
                     onClick={handleExtractTasks}
                     disabled={loading || !transcript.trim()}
-                    className="btn-blue w-full py-3.5 text-sm font-bold shadow-md flex items-center justify-center gap-2"
+                    className="btn-blue w-full py-3.5 text-sm sm:text-base font-extrabold shadow-md flex items-center justify-center gap-2"
                   >
                     {loading ? (
                       <>
-                        <span className="w-4 h-4 border-2 border-[#042642]/40 border-t-[#042642] rounded-full animate-spin" />
+                        <span className="w-4 h-4 border-2 border-[#032039]/40 border-t-[#032039] rounded-full animate-spin" />
                         <span>Extracting Action Items…</span>
                       </>
                     ) : (
                       <>
                         <Brain className="w-4 h-4 text-current" />
-                        <span>Extract Action Items →</span>
+                        <span>Extract &amp; Assign Action Items →</span>
                       </>
                     )}
                   </button>
@@ -673,22 +673,22 @@ export default function MeetHubPage() {
                 <div className="lg:col-span-5 p-6 sm:p-8 bg-[#D9EAE1] space-y-5">
                   <div className="flex items-center justify-between pb-2 border-b border-[#8DB8A2]">
                     <div>
-                      <h3 className="font-bold text-base text-[#07150E] flex items-center gap-2 font-display">
-                        <CheckSquare className="w-4 h-4 text-[#1D4ED8]" />
+                      <h3 className="font-extrabold text-base text-[#060D17] flex items-center gap-2 font-display">
+                        <CheckSquare className="w-4 h-4 text-[#0284C7]" />
                         Detected Action Items
-                        <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-[#EDF4FD] text-[#1D4ED8] border border-[#99BEEC] shadow-2xs">
+                        <span className="text-xs font-extrabold px-2 py-0.5 rounded-full bg-[#E0F2FE] text-[#0369A1] border border-[#7DD3FC] shadow-2xs">
                           {tasks.length}
                         </span>
                       </h3>
-                      <p className="text-xs text-[#1A3828]">Linear synchronization queue</p>
+                      <p className="text-xs text-[#1E293B] font-medium">Ready to sync directly with your Linear backlog</p>
                     </div>
 
                     {pendingCount > 0 && (
                       <button
                         onClick={handleBulkSync}
-                        className="btn-blue px-3 py-1.5 text-xs font-bold flex items-center gap-1 shadow-sm"
+                        className="btn-blue px-3.5 py-1.5 text-xs font-extrabold flex items-center gap-1.5 shadow-sm"
                       >
-                        <Zap className="w-3 h-3 text-current" />
+                        <Zap className="w-3.5 h-3.5 text-current" />
                         <span>Push All to Linear ({pendingCount})</span>
                       </button>
                     )}
@@ -700,11 +700,11 @@ export default function MeetHubPage() {
                       const isCreated = task.status === 'created';
                       const isRejected = task.status === 'rejected';
 
-                      let badgeClass = 'bg-blue-100 text-[#1D4ED8] border border-blue-300 font-bold';
+                      let badgeClass = 'bg-[#0284C7] text-white border border-[#0369A1] font-extrabold shadow-2xs';
                       if (task.priority === 'Urgent') {
-                        badgeClass = 'bg-[#1E3A8A] text-white font-bold border border-blue-900 shadow-sm';
+                        badgeClass = 'bg-red-600 text-white font-extrabold border border-red-700 shadow-2xs';
                       } else if (task.priority === 'High') {
-                        badgeClass = 'bg-blue-200 text-[#1E40AF] font-bold border border-blue-400';
+                        badgeClass = 'bg-amber-600 text-white font-extrabold border border-amber-700 shadow-2xs';
                       }
 
                       return (
@@ -717,28 +717,28 @@ export default function MeetHubPage() {
                           
                           {/* Layer 3: Recessed Compartment Header */}
                           <div className="arsak-recessed px-3.5 py-2 flex items-center justify-between gap-2">
-                            <span className={`text-[11px] font-bold px-2 py-0.5 rounded-md border ${badgeClass}`}>
+                            <span className={`text-[11px] px-2 py-0.5 rounded-md border ${badgeClass}`}>
                               {task.priority}
                             </span>
-                            <span className="text-[11px] font-bold text-[#1E40AF] bg-[#EDF4FD] px-2 py-0.5 rounded-md border border-[#99BEEC] shadow-2xs">
+                            <span className="text-[11px] font-extrabold text-[#0369A1] bg-[#E0F2FE] px-2 py-0.5 rounded-md border border-[#7DD3FC] shadow-2xs">
                               {task.category}
                             </span>
                           </div>
 
                           {/* Layer 4: Clean Content Body with Sage-Paper Background */}
                           <div className="p-3.5 bg-[#EAF4EE] space-y-2">
-                            <p className="text-xs font-bold text-[#07150E] leading-snug">
+                            <p className="text-xs font-extrabold text-[#060D17] leading-snug">
                               {task.task}
                             </p>
 
-                            <div className="flex items-center justify-between pt-1 text-xs text-[#1A3828]">
+                            <div className="flex items-center justify-between pt-1 text-xs text-[#1E293B]">
                               <div className="flex items-center gap-3">
-                                <span className="flex items-center gap-1 font-bold text-[#07150E]">
-                                  <User className="w-3.5 h-3.5 text-[#1D4ED8]" />
+                                <span className="flex items-center gap-1 font-extrabold text-[#060D17]">
+                                  <User className="w-3.5 h-3.5 text-[#0284C7]" />
                                   {task.owner}
                                 </span>
-                                <span className="flex items-center gap-1 font-medium">
-                                  <Calendar className="w-3 h-3 text-[#3B574A]" />
+                                <span className="flex items-center gap-1 font-bold text-[#334155]">
+                                  <Calendar className="w-3 h-3 text-[#0284C7]" />
                                   {task.dueDate}
                                 </span>
                               </div>
@@ -747,7 +747,7 @@ export default function MeetHubPage() {
                               {task.status === 'pending' && (
                                 <button
                                   onClick={() => handleCreateTicket(task.id, task.owner, task.dueDate)}
-                                  className="btn-blue px-2.5 py-1 text-xs font-bold flex items-center gap-1 shadow-sm"
+                                  className="btn-blue px-3 py-1 text-xs font-extrabold flex items-center gap-1 shadow-sm"
                                 >
                                   <Send className="w-3 h-3 text-current" />
                                   <span>Sync</span>
@@ -759,9 +759,9 @@ export default function MeetHubPage() {
                                   href="https://linear.app"
                                   target="_blank"
                                   rel="noreferrer"
-                                  className="px-2.5 py-1 rounded-lg bg-emerald-100 hover:bg-emerald-200 text-emerald-900 font-mono font-bold text-xs flex items-center gap-1.5 border border-emerald-400 shadow-sm transition-colors"
+                                  className="px-2.5 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-mono font-extrabold text-xs flex items-center gap-1.5 border border-emerald-700 shadow-sm transition-colors"
                                 >
-                                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-700" />
+                                  <CheckCircle2 className="w-3.5 h-3.5 text-white" />
                                   <span>{task.ticketId}</span>
                                 </a>
                               )}
@@ -774,17 +774,17 @@ export default function MeetHubPage() {
 
                   {/* Verification Status */}
                   {createdCount > 0 && (
-                    <div className="p-3 rounded-xl bg-[#EAF4EE] border border-[#8DB8A2] text-xs text-[#07150E] flex items-center justify-between shadow-sm">
-                      <span className="font-bold flex items-center gap-1.5">
-                        <CheckCircle2 className="w-4 h-4 text-emerald-700" />
+                    <div className="p-3.5 rounded-xl bg-[#EAF4EE] border border-emerald-400 text-xs text-[#060D17] flex items-center justify-between shadow-sm">
+                      <span className="font-extrabold flex items-center gap-1.5">
+                        <CheckCircle2 className="w-4 h-4 text-emerald-600" />
                         Linear Sync Complete: {createdCount} of {tasks.length} tickets synchronized
                       </span>
                       <button
                         onClick={handleDownloadPDF}
-                        className="text-[#1D4ED8] font-bold hover:underline inline-flex items-center gap-1"
+                        className="text-[#0284C7] font-extrabold hover:underline inline-flex items-center gap-1"
                       >
                         <span>Download Executive Audit</span>
-                        <ArrowRight className="w-3 h-3 text-[#1D4ED8]" />
+                        <ArrowRight className="w-3 h-3 text-current" />
                       </button>
                     </div>
                   )}
@@ -793,13 +793,13 @@ export default function MeetHubPage() {
               </div>
 
               {/* Dashboard Status Bar in Clean Recessed Shelf */}
-              <div className="px-6 py-3 bg-[#D2E6DC] border-t border-[#8DB8A2] flex items-center justify-between flex-wrap gap-2 text-xs text-[#07150E] font-medium">
+              <div className="px-6 py-3 bg-[#D2E6DC] border-t border-[#8DB8A2] flex items-center justify-between flex-wrap gap-2 text-xs text-[#060D17] font-bold">
                 <div className="flex items-center gap-2">
-                  <Shield className="w-3.5 h-3.5 text-[#1D4ED8]" />
+                  <Shield className="w-3.5 h-3.5 text-[#0284C7]" />
                   <span>Zero-Retention In-Memory Architecture: Meeting dialogue and transcripts are never stored permanently.</span>
                 </div>
-                <div className="flex items-center gap-1.5 text-[11px] font-bold text-[#1A3828]">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-600" />
+                <div className="flex items-center gap-1.5 text-[11px] font-extrabold text-[#060D17]">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                   <span>Linear GraphQL API Connected</span>
                 </div>
               </div>
@@ -814,15 +814,15 @@ export default function MeetHubPage() {
       <section id="features" className="max-w-7xl mx-auto px-4 sm:px-8 space-y-10 py-12">
         <div className="text-center max-w-2xl mx-auto space-y-3 relative">
           <div className="absolute -inset-x-16 -inset-y-12 -z-10 bg-gradient-to-b from-[#DFECE6]/95 via-[#D3E5DC]/90 to-transparent blur-3xl rounded-full pointer-events-none" />
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#DFECE6] border border-[#8DB8A2] text-xs font-bold text-[#07150E] shadow-2xs backdrop-blur-md">
-            <Layers className="w-3.5 h-3.5 text-[#1D4ED8]" />
-            <span>Core Capabilities</span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E0F2FE] border border-[#7DD3FC] text-xs font-extrabold text-[#0369A1] shadow-2xs backdrop-blur-md">
+            <Layers className="w-3.5 h-3.5 text-[#0284C7]" />
+            <span>High-Velocity Capabilities</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold font-display text-[#07150E] tracking-tight">
-            Engineered for High-Velocity Product Teams
+          <h2 className="text-3xl sm:text-5xl font-extrabold font-display text-[#060D17] tracking-tight">
+            Engineered for Zero Post-Meeting Overhead
           </h2>
-          <p className="text-[#1A3828] font-medium text-sm sm:text-base">
-            Eliminate post-meeting administrative debt. Turn discussions into structured, tracked, and prioritized engineering issues.
+          <p className="text-[#1E293B] font-medium text-sm sm:text-base leading-relaxed">
+            Never wonder who owns what. MeetHub converts verbal commitments into tracked backlog tickets before the call even ends.
           </p>
         </div>
 
@@ -842,9 +842,9 @@ export default function MeetHubPage() {
                 {/* Layer 3: Recessed Compartment Header */}
                 <div className="arsak-recessed px-5 py-4 flex items-center justify-between border-b border-[#8DB8A2]">
                   <div className={`w-11 h-11 rounded-xl ${f.iconBg} flex items-center justify-center shadow-sm`}>
-                    <Icon className="w-5 h-5 text-[#1D4ED8]" />
+                    <Icon className="w-5 h-5 text-[#0284C7]" />
                   </div>
-                  <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-[#EDF4FD] text-[#1D4ED8] border border-[#99BEEC] shadow-2xs">
+                  <span className="text-[11px] font-extrabold px-2.5 py-0.5 rounded-full bg-[#E0F2FE] text-[#0369A1] border border-[#7DD3FC] shadow-2xs">
                     {f.badge}
                   </span>
                 </div>
@@ -852,17 +852,17 @@ export default function MeetHubPage() {
                 {/* Layer 4: Sage Paper Body */}
                 <div className="p-5 bg-[#EAF4EE] space-y-3 flex-1 flex flex-col justify-between">
                   <div className="space-y-2">
-                    <h3 className="font-bold text-base text-[#07150E] leading-snug group-hover:text-[#1D4ED8] transition-colors font-display">
+                    <h3 className="font-extrabold text-base text-[#060D17] leading-snug group-hover:text-[#0284C7] transition-colors font-display">
                       {f.title}
                     </h3>
-                    <p className="text-xs text-[#1A3828] leading-relaxed">
+                    <p className="text-xs text-[#334155] leading-relaxed font-medium">
                       {f.desc}
                     </p>
                   </div>
 
-                  <div className="pt-3 border-t border-[#8DB8A2] flex items-center justify-between text-xs text-[#1A3828]">
-                    <span className="font-bold text-[#1D4ED8]">{f.capability}</span>
-                    <ArrowUpRight className="w-4 h-4 text-[#1D4ED8] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  <div className="pt-3 border-t border-[#8DB8A2] flex items-center justify-between text-xs text-[#1E293B]">
+                    <span className="font-extrabold text-[#0284C7]">{f.capability}</span>
+                    <ArrowUpRight className="w-4 h-4 text-[#0284C7] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </div>
                 </div>
               </div>
@@ -879,14 +879,14 @@ export default function MeetHubPage() {
           <div className="arsak-shelf" />
 
           <div className="text-center max-w-2xl mx-auto space-y-3 relative z-10">
-            <span className="text-xs font-bold px-3 py-1 rounded-full bg-[#EDF4FD] text-[#1D4ED8] border border-[#99BEEC] shadow-2xs">
+            <span className="text-xs font-extrabold px-3.5 py-1 rounded-full bg-[#E0F2FE] text-[#0369A1] border border-[#7DD3FC] shadow-2xs">
               Ecosystem Integrations
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold font-display tracking-tight text-[#07150E]">
-              Native Integration with Your Team Stack
+            <h2 className="text-3xl sm:text-5xl font-extrabold font-display tracking-tight text-[#060D17]">
+              Plugs Directly into Where Your Team Works
             </h2>
-            <p className="text-[#1A3828] text-sm leading-relaxed">
-              Connect conversational workflows directly to the issue trackers, knowledge bases, and team messaging channels you rely on every day.
+            <p className="text-[#1E293B] text-sm sm:text-base font-medium leading-relaxed">
+              No fragmented tools. Push tasks straight to Linear, broadcast updates to Slack, and archive decisions into Notion.
             </p>
           </div>
 
@@ -901,15 +901,15 @@ export default function MeetHubPage() {
 
                 {/* Recessed Header */}
                 <div className="arsak-recessed px-5 py-3.5 flex items-center justify-between border-b border-[#8DB8A2]">
-                  <span className="font-bold text-base text-[#07150E] group-hover:text-[#1D4ED8] transition-colors font-display">{item.name}</span>
-                  <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-[#EDF4FD] text-[#1D4ED8] border border-[#99BEEC] font-bold shadow-2xs">
+                  <span className="font-extrabold text-base text-[#060D17] group-hover:text-[#0284C7] transition-colors font-display">{item.name}</span>
+                  <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-[#E0F2FE] text-[#0369A1] border border-[#7DD3FC] font-extrabold shadow-2xs">
                     {item.category}
                   </span>
                 </div>
 
                 {/* Sage Paper Body */}
                 <div className="p-5 bg-[#EAF4EE]">
-                  <p className="text-xs text-[#1A3828] leading-relaxed">{item.desc}</p>
+                  <p className="text-xs text-[#334155] leading-relaxed font-medium">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -922,15 +922,15 @@ export default function MeetHubPage() {
       <section id="workflow" className="max-w-7xl mx-auto px-4 sm:px-8 py-12 space-y-10">
         <div className="text-center max-w-2xl mx-auto space-y-3 relative">
           <div className="absolute -inset-x-16 -inset-y-12 -z-10 bg-gradient-to-b from-[#DFECE6]/95 via-[#D3E5DC]/90 to-transparent blur-3xl rounded-full pointer-events-none" />
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#DFECE6] border border-[#8DB8A2] text-xs font-bold text-[#07150E] shadow-2xs backdrop-blur-md">
-            <Activity className="w-3.5 h-3.5 text-[#1D4ED8]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E0F2FE] border border-[#7DD3FC] text-xs font-extrabold text-[#0369A1] shadow-2xs backdrop-blur-md">
+            <Activity className="w-3.5 h-3.5 text-[#0284C7]" />
             <span>Operational Comparison</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold font-display text-[#07150E] tracking-tight">
-            Traditional Follow-ups vs. The MeetHub Pipeline
+          <h2 className="text-3xl sm:text-5xl font-extrabold font-display text-[#060D17] tracking-tight">
+            Manual Follow-ups vs. Autonomous Pipeline
           </h2>
-          <p className="text-[#1A3828] font-medium text-sm sm:text-base">
-            Compare manual post-meeting administration against automated end-to-end issue extraction and synchronization.
+          <p className="text-[#1E293B] font-medium text-sm sm:text-base leading-relaxed">
+            See why modern engineering teams eliminate 5+ hours of post-meeting administrative friction every sprint.
           </p>
         </div>
 
@@ -943,26 +943,26 @@ export default function MeetHubPage() {
             <div className="arsak-shelf" />
 
             {/* Recessed Header */}
-            <div className="arsak-recessed px-6 py-4 flex items-center justify-between border-b border-rose-300 bg-[#F4E8E8]">
+            <div className="arsak-recessed px-6 py-4 flex items-center justify-between border-b border-rose-300 bg-[#FBEBEB]">
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-rose-500" />
-                <span className="font-bold text-xs text-rose-800">
+                <span className="font-extrabold text-xs text-rose-900">
                   Manual Follow-ups &amp; Fragmented Notes
                 </span>
               </div>
-              <span className="text-xs text-[#4A6E5D] font-semibold">Traditional Process</span>
+              <span className="text-xs text-rose-700 font-extrabold">Traditional Process</span>
             </div>
 
             {/* Content List */}
             <div className="p-6 bg-[#EAF4EE] space-y-4 flex-1">
               {WORKFLOW_BEFORE.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-3 text-xs">
-                  <div className="w-5 h-5 rounded-md bg-rose-100 border border-rose-300 flex items-center justify-center shrink-0 text-rose-700 font-bold mt-0.5">
+                  <div className="w-5 h-5 rounded-md bg-rose-100 border border-rose-300 flex items-center justify-center shrink-0 text-rose-700 font-extrabold mt-0.5">
                     ✕
                   </div>
                   <div className="space-y-0.5">
-                    <h4 className="font-bold text-[#07150E] text-xs font-display">{item.title}</h4>
-                    <p className="text-[#1A3828] leading-relaxed text-[11px]">{item.desc}</p>
+                    <h4 className="font-extrabold text-[#060D17] text-xs font-display">{item.title}</h4>
+                    <p className="text-[#334155] leading-relaxed text-[11px] font-medium">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -970,19 +970,19 @@ export default function MeetHubPage() {
           </div>
 
           {/* Column 2: MeetHub Closed-Loop Automation */}
-          <div className="arsak-card rounded-2xl overflow-hidden flex flex-col justify-between relative shadow-md border-2 border-blue-500/70 ring-4 ring-blue-500/15">
+          <div className="arsak-card rounded-2xl overflow-hidden flex flex-col justify-between relative shadow-md border-2 border-sky-500/70 ring-4 ring-sky-500/15">
             <div className="arsak-glaze" />
             <div className="arsak-shelf" />
 
             {/* Recessed Header with Accent */}
-            <div className="arsak-recessed px-6 py-4 flex items-center justify-between border-b border-[#8DB8A2] bg-[#EDF4FD]">
+            <div className="arsak-recessed px-6 py-4 flex items-center justify-between border-b border-[#8DB8A2] bg-[#E0F2FE]">
               <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#1D4ED8]" />
-                <span className="font-bold text-xs text-[#1D4ED8]">
-                  Automated Closed-Loop Pipeline
+                <span className="w-2.5 h-2.5 rounded-full bg-[#0284C7]" />
+                <span className="font-extrabold text-xs text-[#0284C7]">
+                  Autonomous Closed-Loop Pipeline
                 </span>
               </div>
-              <span className="px-2.5 py-0.5 rounded-full bg-[#1D4ED8] text-white font-bold text-[10px] shadow-xs">
+              <span className="px-2.5 py-0.5 rounded-full bg-[#0284C7] text-white font-extrabold text-[10px] shadow-xs">
                 Powered by MeetHub
               </span>
             </div>
@@ -991,12 +991,12 @@ export default function MeetHubPage() {
             <div className="p-6 bg-[#EAF4EE] space-y-4 flex-1">
               {WORKFLOW_AFTER.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-3 text-xs">
-                  <div className="w-5 h-5 rounded-md bg-blue-100 border border-blue-300 flex items-center justify-center shrink-0 text-[#1D4ED8] font-bold mt-0.5">
-                    <Check className="w-3.5 h-3.5 text-[#1D4ED8]" />
+                  <div className="w-5 h-5 rounded-md bg-sky-100 border border-sky-300 flex items-center justify-center shrink-0 text-[#0284C7] font-extrabold mt-0.5">
+                    <Check className="w-3.5 h-3.5 text-[#0284C7]" />
                   </div>
                   <div className="space-y-0.5">
-                    <h4 className="font-bold text-[#07150E] text-xs font-display">{item.title}</h4>
-                    <p className="text-[#1A3828] leading-relaxed text-[11px]">{item.desc}</p>
+                    <h4 className="font-extrabold text-[#060D17] text-xs font-display">{item.title}</h4>
+                    <p className="text-[#334155] leading-relaxed text-[11px] font-medium">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -1011,10 +1011,10 @@ export default function MeetHubPage() {
       <section id="faq" className="max-w-3xl mx-auto px-4 sm:px-8 py-12 space-y-6">
         <div className="text-center space-y-2 relative">
           <div className="absolute -inset-x-12 -inset-y-8 -z-10 bg-gradient-to-b from-[#DFECE6]/90 via-[#D3E5DC]/80 to-transparent blur-3xl rounded-full pointer-events-none" />
-          <h2 className="text-3xl font-extrabold font-display text-[#07150E] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold font-display text-[#060D17] tracking-tight">
             Frequently Asked Questions
           </h2>
-          <p className="text-[#1A3828] font-normal text-sm">
+          <p className="text-[#1E293B] font-medium text-sm sm:text-base">
             Clear answers about task extraction, Linear integration, data privacy, and architecture.
           </p>
         </div>
@@ -1025,22 +1025,22 @@ export default function MeetHubPage() {
             return (
               <div
                 key={idx}
-                className={`arsak-card rounded-2xl overflow-hidden relative transition-all shadow-sm ${isOpen ? 'ring-2 ring-blue-500/40' : ''}`}
+                className={`arsak-card rounded-2xl overflow-hidden relative transition-all shadow-sm ${isOpen ? 'ring-2 ring-sky-500/40' : ''}`}
               >
                 <div className="arsak-glaze" />
                 <div className="arsak-shelf" />
 
                 <button
                   onClick={() => setOpenFaq(isOpen ? -1 : idx)}
-                  className={`w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-[#07150E] transition-colors ${isOpen ? 'bg-[#D3E5DC]' : 'bg-[#EAF4EE]'}`}
+                  className={`w-full p-5 text-left flex items-center justify-between gap-4 font-extrabold text-sm sm:text-base text-[#060D17] transition-colors ${isOpen ? 'bg-[#D3E5DC]' : 'bg-[#EAF4EE]'}`}
                 >
                   <span className="font-display">{item.q}</span>
-                  <span className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 text-xs font-bold transition-transform ${isOpen ? 'btn-blue shadow-xs' : 'bg-[#F0F7FF] text-[#0A3F6B] border border-[#A4D3FA]'}`}>
+                  <span className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 text-xs font-extrabold transition-transform ${isOpen ? 'btn-blue shadow-xs' : 'bg-[#F0F9FF] text-[#0369A1] border border-[#BAE6FD]'}`}>
                     {isOpen ? '−' : '+'}
                   </span>
                 </button>
                 {isOpen && (
-                  <div className="px-5 pb-5 text-xs sm:text-sm text-[#1A3828] leading-relaxed border-t border-[#8DB8A2] pt-3 bg-[#EAF4EE]">
+                  <div className="px-5 pb-5 text-xs sm:text-sm text-[#334155] leading-relaxed border-t border-[#8DB8A2] pt-3 bg-[#EAF4EE] font-medium">
                     {item.a}
                   </div>
                 )}
@@ -1058,26 +1058,26 @@ export default function MeetHubPage() {
           <div className="arsak-shelf" />
 
           <div className="max-w-2xl mx-auto space-y-4 relative z-10">
-            <h2 className="text-3xl sm:text-4xl font-bold font-display tracking-tight text-[#07150E] leading-tight">
-              Ready to Eliminate Meeting Debt Across Your Team?
+            <h2 className="text-3xl sm:text-5xl font-extrabold font-display tracking-tight text-[#060D17] leading-tight">
+              Ready to Eliminate Post-Meeting Debt?
             </h2>
-            <p className="text-sm sm:text-base text-[#1A3828] leading-relaxed">
-              Turn every call into documented momentum. Connect your meeting discussions directly to Linear in less than two minutes.
+            <p className="text-sm sm:text-base text-[#1E293B] font-medium leading-relaxed">
+              Turn every standup and sync into real engineering velocity. Connect your discussions directly to Linear in less than two minutes.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-3 pt-3">
               <button
                 onClick={() => setShowDemoModal(true)}
-                className="btn-blue px-8 py-3.5 rounded-xl font-bold text-sm sm:text-base shadow-lg transition-all flex items-center gap-2"
+                className="btn-blue px-8 py-4 rounded-xl font-extrabold text-sm sm:text-base shadow-lg transition-all flex items-center gap-2"
               >
                 <span>Schedule a 15-Min Walkthrough</span>
                 <ArrowRight className="w-4 h-4 text-current" />
               </button>
               <button
                 onClick={handleReset}
-                className="btn-secondary-blue px-6 py-3.5 rounded-xl font-semibold text-sm sm:text-base transition-all shadow-xs"
+                className="btn-secondary-blue px-6 py-4 rounded-xl font-extrabold text-sm sm:text-base transition-all shadow-xs"
               >
-                <span>Reset Demo Pipeline</span>
+                <span>Reset Live Demo</span>
               </button>
             </div>
           </div>
@@ -1121,13 +1121,13 @@ export default function MeetHubPage() {
       {/* ── WALKTHROUGH DEMO MODAL (Arsak Stage Modal) ──────────────────── */}
       {showDemoModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md">
-          <div className="arsak-stage rounded-3xl p-6 sm:p-8 max-w-lg w-full text-[#07150E] shadow-2xl relative max-h-[92vh] overflow-y-auto">
+          <div className="arsak-stage rounded-3xl p-6 sm:p-8 max-w-lg w-full text-[#060D17] shadow-2xl relative max-h-[92vh] overflow-y-auto">
             <div className="arsak-glaze" />
             <div className="arsak-shelf" />
 
             <button
               onClick={() => { setShowDemoModal(false); setDemoConfirmed(false); }}
-              className="absolute top-5 right-5 w-8 h-8 rounded-full bg-[#EDF4FD] hover:bg-[#DFEBF9] flex items-center justify-center text-[#1D4ED8] border border-[#99BEEC] transition-colors z-20"
+              className="absolute top-5 right-5 w-8 h-8 rounded-full bg-[#E0F2FE] hover:bg-[#BAE6FD] flex items-center justify-center text-[#0284C7] border border-[#7DD3FC] transition-colors z-20"
             >
               <X className="w-4 h-4" />
             </button>
@@ -1143,47 +1143,47 @@ export default function MeetHubPage() {
                 className="space-y-4 relative z-10"
               >
                 <div>
-                  <div className="text-xs font-bold text-[#1D4ED8] mb-1 flex items-center gap-1.5">
-                    <Calendar className="w-3.5 h-3.5 text-[#1D4ED8]" />
+                  <div className="text-xs font-extrabold text-[#0284C7] mb-1 flex items-center gap-1.5">
+                    <Calendar className="w-3.5 h-3.5 text-[#0284C7]" />
                     <span>15-Minute Architecture Walkthrough</span>
                   </div>
-                  <h3 className="text-xl font-bold text-[#07150E] font-display">Schedule Live Architecture Walkthrough</h3>
-                  <p className="text-xs text-[#1A3828]">
+                  <h3 className="text-xl font-extrabold text-[#060D17] font-display">Schedule Live Architecture Walkthrough</h3>
+                  <p className="text-xs text-[#1E293B] font-medium">
                     See how MeetHub automates closed-loop task extraction and Linear synchronization.
                   </p>
                 </div>
 
                 <div className="space-y-3 text-xs">
                   <div>
-                    <label className="block font-bold text-[#07150E] mb-1">Your Full Name</label>
+                    <label className="block font-extrabold text-[#060D17] mb-1">Your Full Name</label>
                     <input
                       type="text"
                       required
                       placeholder="e.g. Alex Morgan"
                       value={demoName}
                       onChange={e => setDemoName(e.target.value)}
-                      className="w-full bg-[#EAF4EE] border border-[#8DB8A2] rounded-xl p-3 focus:outline-none focus:border-[#2563EB] text-[#07150E] placeholder-[#4A6E5D] shadow-2xs"
+                      className="w-full bg-[#EAF4EE] border border-[#8DB8A2] rounded-xl p-3 focus:outline-none focus:border-[#0284C7] text-[#060D17] placeholder-[#64748B] shadow-2xs font-semibold"
                     />
                   </div>
 
                   <div>
-                    <label className="block font-bold text-[#07150E] mb-1">Work Email Address</label>
+                    <label className="block font-extrabold text-[#060D17] mb-1">Work Email Address</label>
                     <input
                       type="email"
                       required
                       placeholder="alex@company.com"
                       value={demoEmail}
                       onChange={e => setDemoEmail(e.target.value)}
-                      className="w-full bg-[#EAF4EE] border border-[#8DB8A2] rounded-xl p-3 focus:outline-none focus:border-[#2563EB] text-[#07150E] placeholder-[#4A6E5D] shadow-2xs"
+                      className="w-full bg-[#EAF4EE] border border-[#8DB8A2] rounded-xl p-3 focus:outline-none focus:border-[#0284C7] text-[#060D17] placeholder-[#64748B] shadow-2xs font-semibold"
                     />
                   </div>
 
                   <div>
-                    <label className="block font-bold text-[#07150E] mb-1">Team Size</label>
+                    <label className="block font-extrabold text-[#060D17] mb-1">Team Size</label>
                     <select
                       value={demoTeamSize}
                       onChange={e => setDemoTeamSize(e.target.value)}
-                      className="w-full bg-[#EAF4EE] border border-[#8DB8A2] rounded-xl p-3 focus:outline-none focus:border-[#2563EB] text-[#07150E] shadow-2xs font-medium"
+                      className="w-full bg-[#EAF4EE] border border-[#8DB8A2] rounded-xl p-3 focus:outline-none focus:border-[#0284C7] text-[#060D17] shadow-2xs font-bold"
                     >
                       <option>1-10 engineers</option>
                       <option>10-50 team members</option>
@@ -1197,13 +1197,13 @@ export default function MeetHubPage() {
                   <button
                     type="button"
                     onClick={() => setShowDemoModal(false)}
-                    className="btn-secondary-blue px-4 py-2.5 rounded-xl text-xs font-semibold"
+                    className="btn-secondary-blue px-4 py-2.5 rounded-xl text-xs font-extrabold"
                   >
                     Cancel
                   </button>
                   <button
                     type="submit"
-                    className="btn-blue px-6 py-2.5 rounded-xl text-xs font-semibold shadow-md"
+                    className="btn-blue px-6 py-2.5 rounded-xl text-xs font-extrabold shadow-md"
                   >
                     Confirm Walkthrough Booking
                   </button>
@@ -1211,16 +1211,16 @@ export default function MeetHubPage() {
               </form>
             ) : (
               <div className="text-center py-6 space-y-4 relative z-10">
-                <div className="w-14 h-14 rounded-full bg-emerald-200 text-emerald-900 mx-auto flex items-center justify-center border border-emerald-400 shadow-sm">
-                  <CheckCircle2 className="w-8 h-8 text-emerald-700" />
+                <div className="w-14 h-14 rounded-full bg-emerald-100 text-emerald-900 mx-auto flex items-center justify-center border border-emerald-400 shadow-sm">
+                  <CheckCircle2 className="w-8 h-8 text-emerald-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#07150E] font-display">Walkthrough Confirmed!</h3>
-                <p className="text-xs text-[#1A3828] max-w-sm mx-auto leading-relaxed">
+                <h3 className="text-2xl font-extrabold text-[#060D17] font-display">Walkthrough Confirmed!</h3>
+                <p className="text-xs text-[#1E293B] max-w-sm mx-auto leading-relaxed font-medium">
                   A calendar invite and interactive sandbox link have been emailed to <strong>{demoEmail}</strong>.
                 </p>
                 <button
                   onClick={() => { setShowDemoModal(false); setDemoConfirmed(false); }}
-                  className="btn-blue px-6 py-2.5 rounded-xl text-xs font-semibold shadow-md"
+                  className="btn-blue px-6 py-2.5 rounded-xl text-xs font-extrabold shadow-md"
                 >
                   Return to Dashboard
                 </button>
