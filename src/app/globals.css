@@ -374,10 +374,19 @@
    ARSAK ARCHITECTURAL DESIGN SYSTEM (Deep Tech Blue & Tactile Depth)
    ══════════════════════════════════════════════════════════════════ */
 
+@font-face {
+  font-family: 'Kane Bold';
+  src: local('Kane Bold'), local('Kane-Bold'), local('Kane'),
+       url('/fonts/kane-bold.woff2') format('woff2'),
+       url('/fonts/kane-bold.woff') format('woff'),
+       url('/fonts/kane-bold.ttf') format('truetype');
+  font-weight: 700 900;
+  font-display: swap;
+}
+
 .font-display {
-  font-family: "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  letter-spacing: -0.03em;
-  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  font-family: "Kane Bold", "Kane", "Kanit", "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  letter-spacing: -0.02em;
 }
 
 /* Tier 1: CSS Architectural Dot Grid */

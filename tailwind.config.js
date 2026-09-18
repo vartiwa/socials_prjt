@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Inter"', '"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+        display: ['"Kane Bold"', '"Kane"', '"Kanit"', '"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+        sans: ['"Kane Bold"', '"Kane"', '"Kanit"', '"Plus Jakarta Sans"', '"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
       colors: {
